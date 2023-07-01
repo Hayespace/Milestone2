@@ -48,8 +48,44 @@
     color: rgb(217, 166, 72);
 }
 
+.panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+} 
+
+.panel button {
+    opacity: 0;
+}
+
 .panel.active {
     width: 80%;
     margin: auto;
     transition: width 0.5s ease-in-out;
 }
+
+.panel.active h3 {
+    opacity: 1;
+    transition: width 0.5s ease-in-out;
+}
+
+.panel.active button {
+    opacity: 1;
+    height: 20vh;
+    width: 20vh;
+    padding: auto;
+    font-size: 1.2rem;
+    transition: opacity 1.5s ease-in;
+}
+
+.buttons { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
