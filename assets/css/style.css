@@ -16,76 +16,123 @@
   .logo {
       margin: 10px 10px;
   }
-
+  
   .logo h2 {
-    color: rgb(217, 166, 72);
-    margin: auto;
-    text-align: center;
-    padding: auto;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
+      color: rgb(217, 166, 72);
+      margin: auto;
+      text-align: center;
+      padding: auto;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
   .container {
-    display: flex;
-    width: 70vw;
-    justify-content: center;
-    padding: 2%;
-}
+      display: flex;
+      width: 70vw;
+      justify-content: center;
+      padding: 2%;
+  }
+  
+  .panel {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 80vh;
+      width: 10%;
+      padding: 30px 30px;
+      border-radius: 50px;
+      color: white;
+      cursor: pointer;
+      margin: 10px;
+      position: relative;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      color: rgb(217, 166, 72);
+      
+  }
+  
+  .panel h3 {
+      font-size: 24px;
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      margin: 0;
+      opacity: 0;
+  } 
 
-.panel {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 80vh;
-    width: 10%;
-    padding: 30px 30px;
-    border-radius: 50px;
-    color: white;
-    cursor: pointer;
-    margin: 10px;
-    position: relative;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: rgb(217, 166, 72);
-}
+  .panel button {
+      opacity: 0;
+  }
+  
+  .panel.active {
+      width: 80%;
+      margin: auto;
+      transition: width 0.5s ease-in-out;
+  }
+  
+  .panel.active h3 {
+      opacity: 1;
+      transition: opacity 0.7s ease-in;
+  } 
+  
+  .panel.active button {
+      opacity: 1;
+      height: 20vh;
+      width: 20vh;
+      padding: auto;
+      font-size: 1.2rem;
+      transition: opacity 1.5s ease-in;
+  }
+  
+  .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      
+  }
+  
+    .btn {
+        background-color: rgb(61, 40, 82);
+        border-radius: 50px;
+        border: none;
+        box-shadow: 10px 5px 5px rgba(6, 3, 23, 0.675);
+        color: rgb(250, 200, 106);
+        cursor: grab;
+        margin: 1rem;
+        padding: 0;
+        font-size: 0;
+        font-family:Arial, Helvetica, sans-serif;
+        
+    }
+  
+    .btn:active,
+    .playing {
+      transform: scale(1.1);
+      border: solid;
+      background-color:  rgb(61, 40, 82);
+      border-color: rgba(217, 166, 72, 0.814);
+      box-shadow: 5px 5px 5px rgba(208, 119, 68, 0.876);
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
 
-.panel h3 {
-    font-size: 24px;
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    margin: 0;
-    opacity: 0;
-} 
+    .active .btn:hover {
+        opacity: 0.95;
+    }
 
-.panel button {
-    opacity: 0;
-}
+    
+  
+  @media(max-width: 1930px)  {
+      .buttons {
+          max-height: 100%;
+          overflow-x: scroll;
+      }
 
-.panel.active {
-    width: 80%;
-    margin: auto;
-    transition: width 0.5s ease-in-out;
-}
-
-.panel.active h3 {
-    opacity: 1;
-    transition: width 0.5s ease-in-out;
-}
-
-.panel.active button {
-    opacity: 1;
-    height: 20vh;
-    width: 20vh;
-    padding: auto;
-    font-size: 1.2rem;
-    transition: opacity 1.5s ease-in;
-}
-
-.buttons { 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
+      .container {
+        width: auto;
+        height: auto;
+        margin-right: auto;
+        align-items: flex;
+        justify-content: center;
+        height: auto;
+    }
+  }
