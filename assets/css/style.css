@@ -77,6 +77,18 @@
       opacity: 1;
       transition: opacity 0.7s ease-in;
   } 
+
+  .panel.active h1 {
+     display: inline-flex;
+     font-size: 2rem;
+     margin-top: 25%;
+     margin-bottom: 6%;
+     
+  }
+
+  .panel.active p {
+    margin-left: 60%;
+  }
   
   .panel.active button {
       opacity: 1;
@@ -111,10 +123,9 @@
     }
   
     .btn:active,
-    .playing,
-    #btn:active,
-    #btn.active {
+    .playing {
       transform: scale(1.1);
+      transition: transform 0.7s ease-out;
       border: solid;
       border-color: rgba(217, 166, 72, 0.814);
       box-shadow: 10px 5px 5px rgba(217, 166, 72, 0.876);

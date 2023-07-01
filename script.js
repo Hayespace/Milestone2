@@ -17,19 +17,19 @@ function removeActiveClasses() {
 }
 
 window.addEventListener('keydown', playSound);
-window.addEventListener('keyup', animate);
+window.addEventListener('keyup', buttonAnimate);
 
 function playSound(e){
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-    const button = document.querySelector(`.btn[data-key="${e.keyCode}"]`);
+    const btndown = document.querySelector(`.btn[data-key="${e.keyCode}"]`);
     if(!audio) return;
 
-    button.classList.add('playing');
+    btndown.classList.add('playing');
     audio.currentTime = 0;
     audio.play();  
 }
 
-function animate(e){
+function buttonAnimate(e){
    const btnup = document.querySelector(`.btn[data-key="${e.keyCode}"]`);
    btnup.classList.remove('playing');
 }
