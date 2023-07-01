@@ -1,8 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;800&family=Roboto+Mono:ital,wght@0,400;1,200;1,700&display=swap');
-
-
-
-
 * {
     box-sizing: border-box;
   }
@@ -42,7 +38,7 @@
       background-position: center;
       background-repeat: no-repeat;
       height: 80vh;
-      width: 25%;
+      width: 10%;
       padding: 30px 30px;
       border-radius: 50px;
       color: white;
@@ -70,25 +66,13 @@
   .panel.active {
       width: 80%;
       margin: auto;
-      transition: width 1s ease-in-out;
+      transition: width 0.5s ease-in-out;
   }
   
   .panel.active h3 {
       opacity: 1;
       transition: opacity 0.7s ease-in;
   } 
-
-  .panel.active h1 {
-     display: inline-flex;
-     font-size: 2rem;
-     margin-top: 25%;
-     margin-bottom: 6%;
-     
-  }
-
-  .panel.active p {
-    margin-left: 60%;
-  }
   
   .panel.active button {
       opacity: 1;
@@ -96,7 +80,7 @@
       width: 20vh;
       padding: auto;
       font-size: 1.2rem;
-      transition: opacity 2s ease-in;
+      transition: opacity 1.5s ease-in;
   }
   
   .buttons {
@@ -117,18 +101,18 @@
         cursor: grab;
         margin: 1rem;
         padding: 0;
-        font-size: 3rem;
-        font-family: 'Kanit', sans-serif;
+        font-size: 0;
+        font-family:Arial, Helvetica, sans-serif;
         
     }
   
     .btn:active,
     .playing {
       transform: scale(1.1);
-      transition: transform 0.7s ease-out;
       border: solid;
+      background-color:  rgb(61, 40, 82);
       border-color: rgba(217, 166, 72, 0.814);
-      box-shadow: 10px 5px 5px rgba(217, 166, 72, 0.876);
+      box-shadow: 5px 5px 5px rgba(208, 119, 68, 0.876);
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
 
@@ -143,10 +127,11 @@
     }
 
     #edm-btn {
-        background-color: rgb(49, 49, 55);
+        background-color: rgb(40, 40, 51);
     }
 
     
+  
   @media(max-width: 1930px)  {
       .buttons {
           max-height: 100%;
@@ -163,37 +148,54 @@
     }
   }
 
-  @media(max-width: 1288px) {
-    .panel.active button {
-       border-radius: 35px; 
-       height: 17vh;
-       width: 17vh;
-       margin: 10px;
-       justify-content: center;
-       align-items: center;
-       font-size: small;
+  @media(max-width: 1930px)  {
+    .buttons {
+        max-height: 100%;
+        overflow-x: scroll;
     }
-}
 
-@media(max-width: 923px) {
     .container {
-        margin: 10px 10px;
-    }
-    .panel.active button {
-        height: 13vh;
-        width: 13vh;
-        margin: 5px;
-    }
-
-    .logo {
-        display: none;
-    }
+      width: auto;
+      height: auto;
+      margin-right: auto;
+      align-items: flex;
+      justify-content: center;
+      height: auto;
+  }
 }
-
-@media(max-width: 569px) {
-    .panel.active button {
-        height: 10vh;
-        width: 10vh;
-        margin: 5px;
-    }
-}
+  
+  @media(max-width: 1288px) {
+      .panel.active button {
+         border-radius: 35px; 
+         height: 17vh;
+         width: 17vh;
+         margin: 10px;
+         justify-content: center;
+         align-items: center;
+         font-size: small;
+      }
+  }
+  
+  
+  @media(max-width: 923px) {
+      .container {
+          margin: 10px 10px;
+      }
+      .panel.active button {
+          height: 13vh;
+          width: 13vh;
+          margin: 5px;
+      }
+  
+      .logo {
+          display: none;
+      }
+  }
+  
+  @media(max-width: 569px) {
+      .panel.active button {
+          height: 10vh;
+          width: 10vh;
+          margin: 5px;
+      }
+  }
