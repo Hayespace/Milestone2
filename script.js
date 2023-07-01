@@ -1,4 +1,4 @@
-// Scrolling panels functions //
+// Scrolling panels functions
 
 const panels = document.querySelectorAll('.panel')
 
@@ -16,16 +16,8 @@ function removeActiveClasses() {
     })
 }
 
-// Keyboard functions //
-
-const pads = Array.from(document.querySelectorAll('.btn'));
-pads.forEach(btn => btn.addEventListener('transitionend', removeTransition));
 window.addEventListener('keydown', playSound);
-
-function removeTransition(e) {
-  if (e.propertyName !== 'transform') return;
-  this.classList.remove('playing');
-}
+window.addEventListener('keyup', animate);
 
 function playSound(e){
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
@@ -35,10 +27,14 @@ function playSound(e){
     button.classList.add('playing');
     audio.currentTime = 0;
     audio.play();  
-    
 }
 
-// Sounds to button on click //
+function animate(e){
+   const btnup = document.querySelector(`.btn[data-key="${e.keyCode}"]`);
+   btnup.classList.remove('playing');
+}
+
+// Sounds to button on click
 
 const kick = new Audio();
 kick.src = 'assets/sounds/library-1/Kick.wav';
