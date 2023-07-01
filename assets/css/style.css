@@ -136,3 +136,39 @@
         height: auto;
     }
   }
+
+  @media(max-width: 1288px) {
+    .panel.active button {
+       border-radius: 35px; 
+       height: 17vh;
+       width: 17vh;
+       margin: 10px;
+       justify-content: center;
+       align-items: center;
+       font-size: small;
+    }
+}
+
+
+@media(max-width: 923px) {
+    .container {
+        margin: 10px 10px;
+    }
+    .panel.active button {
+        height: 13vh;
+        width: 13vh;
+        margin: 5px;
+    }
+
+    .logo {
+        display: none;
+    }
+}
+
+@media(max-width: 569px) {
+    .panel.active button {
+        height: 10vh;
+        width: 10vh;
+        margin: 5px;
+    }
+}
