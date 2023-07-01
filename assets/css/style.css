@@ -65,7 +65,7 @@
   .panel.active {
       width: 80%;
       margin: auto;
-      transition: width 0.5s ease-in-out;
+      transition: width 1s ease-in-out;
   }
   
   .panel.active h3 {
@@ -79,7 +79,7 @@
       width: 20vh;
       padding: auto;
       font-size: 1.2rem;
-      transition: opacity 1.5s ease-in;
+      transition: opacity 2s ease-in;
   }
   
   .buttons {
@@ -109,9 +109,8 @@
     .playing {
       transform: scale(1.1);
       border: solid;
-      background-color:  rgb(61, 40, 82);
       border-color: rgba(217, 166, 72, 0.814);
-      box-shadow: 5px 5px 5px rgba(208, 119, 68, 0.876);
+      box-shadow: 10px 5px 5px rgba(217, 166, 72, 0.876);
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
 
@@ -119,8 +118,15 @@
         opacity: 0.95;
     }
 
+    #kit-btn {
+        background-color: rgba(163, 50, 32);
+    }
+
+    #edm-btn {
+        background-color: rgb(49, 49, 55);
+    }
+
     
-  
   @media(max-width: 1930px)  {
       .buttons {
           max-height: 100%;
