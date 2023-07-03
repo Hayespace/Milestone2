@@ -16,25 +16,23 @@ function removeActiveClasses() {
 
 // Key press audio and button animation
 
-window.addEventListener('keydown', playSound);
-window.addEventListener('keyup', buttonAnimate); 
+window.addEventListener('keydown', event => playSound(event.keyCode));
+window.addEventListener('keyup', event => buttonAnimate(event.keyCode)); 
 
-function playSound(e){
-    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-    const btndown = document.querySelector(`.active .btn[data-key="${e.keyCode}"]`);
+function playSound(keyCode){
+    const audio = document.querySelector(`audio[data-key="${keyCode}"]`);
+    const btndown = document.querySelector(`.active .btn[data-key="${keyCode}"]`);
     
     btndown.classList.add('playing');
     audio.currentTime = 0;
     audio.play();  
 }
 
-function buttonAnimate(e){
-   const btnup = document.querySelector(`.btn[data-key="${e.keyCode}"]`);
-
+function buttonAnimate(keyCode){
+      console.log('test', `.btn[data-key="${keyCode}"]`)
+   const btnup = document.querySelector(`.btn[data-key="${keyCode}"]`);
    btnup.classList.remove('playing');
 }
-
-// Prevent sounds from playing when not active
 
 
 
