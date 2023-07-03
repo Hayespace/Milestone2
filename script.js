@@ -21,7 +21,7 @@ window.addEventListener('keyup', buttonAnimate);
 
 function playSound(e){
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-    const btndown = document.querySelector(`.btn[data-key="${e.keyCode}"]`);
+    const btndown = document.querySelector(`.active .btn[data-key="${e.keyCode}"]`);
     
     btndown.classList.add('playing');
     audio.currentTime = 0;
@@ -36,11 +36,7 @@ function buttonAnimate(e){
 
 // Prevent sounds from playing when not active
 
-const activeClass = document.querySelectorAll('.active')
 
-    if(!activeClass) {
-      window.removeEventListener('keydown', playSound);
-}
 
 // Sounds to button on click
 
