@@ -1,29 +1,28 @@
-// Scrolling panels functions
+// Scrolling panels function
 
 const panels = document.querySelectorAll('.panel')
 
 panels.forEach(panel => {
-  panel.addEventListener('click', () => {
-    removeActiveClasses()
-    panel.classList.add('active')
-  })
+      panel.addEventListener('click', () => {
+      removeActiveClasses()
+      panel.classList.add('active')
+     })
 })
 
 function removeActiveClasses() {
-    panels.forEach(panel => {
-        panel.classList.remove('active')
-
-    })
+      panels.forEach(panel => {
+      panel.classList.remove('active')});
 }
 
+// Key press audio and button animation
+
 window.addEventListener('keydown', playSound);
-window.addEventListener('keyup', buttonAnimate);
+window.addEventListener('keyup', buttonAnimate); 
 
 function playSound(e){
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
     const btndown = document.querySelector(`.btn[data-key="${e.keyCode}"]`);
-    if(!audio) return;
-
+    
     btndown.classList.add('playing');
     audio.currentTime = 0;
     audio.play();  
@@ -31,7 +30,16 @@ function playSound(e){
 
 function buttonAnimate(e){
    const btnup = document.querySelector(`.btn[data-key="${e.keyCode}"]`);
+
    btnup.classList.remove('playing');
+}
+
+// Prevent sounds from playing when not active
+
+const activeClass = document.querySelectorAll('.active')
+
+    if(!activeClass) {
+      window.removeEventListener('keydown', playSound);
 }
 
 // Sounds to button on click

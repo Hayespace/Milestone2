@@ -88,21 +88,21 @@
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      height: 100%;
-      
+      height: 100%;  
   }
   
     .btn {
         background-color: rgb(61, 40, 82);
         border-radius: 50px;
         border: none;
-        box-shadow: 10px 5px 5px rgba(6, 3, 23, 0.675);
+        box-shadow: 15px 10px 5px rgba(6, 3, 23, 0.675);
         color: rgb(250, 200, 106);
         cursor: grab;
         margin: 1rem;
         padding: 0;
         font-size: 0;
-        font-family:Arial, Helvetica, sans-serif;
+        font-family: 'Kanit', sans-serif;
+    
         
     }
   
@@ -112,7 +112,7 @@
       border: solid;
       background-color:  rgb(61, 40, 82);
       border-color: rgba(217, 166, 72, 0.814);
-      box-shadow: 5px 5px 5px rgba(208, 119, 68, 0.876);
+      box-shadow: 15px 15px 5px rgba(208, 119, 68, 0.876);
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
 
@@ -121,7 +121,8 @@
         transition: 0.2s ease-in-out;
         
     }
-
+     
+    
     #kit-btn {
         background-color: rgba(163, 50, 32);
     }

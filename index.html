@@ -20,7 +20,7 @@
 
     <div class="container">
         <div class="panel active" style="background-image: url(./assets/images/808.jpg)">
-          <div class="buttons">
+          <div class="buttons 808">
             <button data-key="65" class="btn" onclick="kick.play()"><h1>Kick</h1><p>A</p></button>
             <button data-key="83" class="btn" onclick="snare.play()"><h1>Snare</h1><p>S</p></button>
             <button data-key="68" class="btn" onclick="chh.play()"><h1>Hi-Hat</h1><p>D</p></button>
@@ -35,31 +35,31 @@
         </div>
 
        <div class="panel" style="background-image: url(./assets/images/kit.jpg)">
-         <div class="buttons">
-            <button id="kit-btn" class="btn">Kick</button>
-            <button id="kit-btn" class="btn">Snare</button>
-            <button id="kit-btn" class="btn">Hi Hat</button>
-            <button id="kit-btn" class="btn">Cymbal</button>
-            <button id="kit-btn" class="btn">Crash</button>
-            <button id="kit-btn" class="btn">Clap</button>
-            <button id="kit-btn" class="btn">Conga</button>
-            <button id="kit-btn" class="btn">Cowbell</button>
-            <button id="kit-btn" class="btn">Shaker</button>
+         <div class="buttons vintage-kit">
+            <button id="kit-btn" data-key="90" class="btn"><h1>Kick</h1><p>Z</p></button>
+            <button id="kit-btn" data-key="80" class="btn"><h1>Snare</h1><p>X</p></button>
+            <button id="kit-btn" data-key="67" class="btn"><h1>Open HH</h1><p>C</p></button>
+            <button id="kit-btn" data-key="86" class="btn"><h1>Closed HH</h1><p>V</p></button>
+            <button id="kit-btn" data-key="66" class="btn"><h1>Tom</h1><p>B</p></button>
+            <button id="kit-btn" data-key="78" class="btn"><h1>Floor Tom</h1><p>N</p></button>
+            <button id="kit-btn" data-key="77" class="btn"><h1>Cowbell</h1><p>M</p></button>
+            <button id="kit-btn" data-key="188" class="btn"><h1>Rim Tap</h1><p><</p></button>
+            <button id="kit-btn" data-key="190" class="btn"><h1>Cymbal</h1><p>></p></button>
          </div>
             <h3>Vintage</h3>
         </div>
 
         <div class="panel" style="background-image: url(./assets/images/maschine.jpg)">
-         <div class="buttons">
-            <button id="edm-btn" class="btn">Kick</button>
-            <button id="edm-btn" class="btn">Snare</button>
-            <button id="edm-btn" class="btn">Hi Hat</button>
-            <button id="edm-btn" class="btn">Cymbal</button>
-            <button id="edm-btn" class="btn">Crash</button>
-            <button id="edm-btn" class="btn">Clap</button>
-            <button id="edm-btn" class="btn">Conga</button>
-            <button id="edm-btn" class="btn">Cowbell</button>
-            <button id="edm-btn" class="btn">Shaker</button>
+         <div class="buttons edm">
+            <button id="edm-btn" class="btn"><h1>Kick</h1><p>Q</p></button>
+            <button id="edm-btn" class="btn"><h1>Snare</h1><p>W</p></button>
+            <button id="edm-btn" class="btn"><h1>Rim Shot</h1><p>E</p></button>
+            <button id="edm-btn" class="btn"><h1>Pad 1</h1><p>R</p></button>
+            <button id="edm-btn" class="btn"><h1>Pad 2</h1><p>T</p></button>
+            <button id="edm-btn" class="btn"><h1>"Yeah!"</h1><p>Y</p></button>
+            <button id="edm-btn" class="btn"><h1>Siren</h1><p>U</p></button>
+            <button id="edm-btn" class="btn"><h1>This</h1><p>I</p></button>
+            <button id="edm-btn" class="btn"><h1>That</h1><p>O</p></button>
          </div>
             <h3>EDM</h3>
         </div>
@@ -74,6 +74,8 @@
       <audio data-key="74" src="assets/sounds/library-1/Conga.wav"></audio>
       <audio data-key="75" src="assets/sounds/library-1/Cowbell.wav"></audio>
       <audio data-key="76" src="assets/sounds/library-1/Shaker.wav"></audio>
+
+      <audio data-key="90" src="assets/sounds/library-1/Shaker.wav"></audio>
 
       <script src="script.js"></script>
 </body>
