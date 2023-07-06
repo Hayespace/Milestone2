@@ -47,5 +47,18 @@ function buttonAnimate(keyCode){
 }
 
 
+// Piano Keyboard
+
+const pianoKeys = document.querySelectorAll('.key')
+
+function playPiano(newUrl) {
+      new Audio(newUrl).play()
+}
+
+pianoKeys.forEach((pianoKey, i) => {
+      const newUrl = '.assets/sounds/library-2/key' + number + ' .mp3'
+      pianoKey.addEventListener('click', () => playPiano(newUrl))
+})
+
 
 
