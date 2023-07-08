@@ -50,7 +50,7 @@ function buttonAnimate(keyCode){
 };
 
 
-// Piano Keyboard
+// Piano Mouse
 
 const keys = document.querySelectorAll('.key');
 keys.forEach(key => {
@@ -65,7 +65,7 @@ keys.forEach(key => {
 });
 
 
-// Key press audio and key animation
+// Piano Keyboard
 
 window.addEventListener('keydown', event => playPiano(event.keyCode));
 window.addEventListener('keyup', event => keyAnimate(event.keyCode)); 
@@ -74,14 +74,14 @@ function playPiano(keyCode){
     const audio = document.querySelector(`audio[data-key="${keyCode}"]`);
     const keyDown = document.querySelector(`.active .key[data-key="${keyCode}"]`);
     
-    keyDown.classList.add('playing');
+    keyDown.classList.add('key-playing');
     audio.currentTime = 0;
     audio.play();  
 };
 
-function keyAnimateAnimate(keyCode){
+function keyAnimate(keyCode){
     const keyUp = document.querySelector(`.key[data-key="${keyCode}"]`);
 
-    keyUp.classList.remove('playing');
+    keyUp.classList.remove('key-playing');
 };
 

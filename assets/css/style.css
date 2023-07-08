@@ -114,15 +114,15 @@
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
 
-    .key:active {
+    .key:active,
+    .key-playing {
       transform: scale(1.1);
       border: solid;
-      border-color: rgba(208, 119, 68);
-      box-shadow: 15px 15px 5px rgba(208, 119, 68, 0.876);
+      border-color: rgb(225, 120, 195);
+      box-shadow: 15px 15px 5px rgba(225, 120, 195, 0.876);
       
     }
     
-
     .active .btn:hover {
         opacity: 0.95;
         transition: 0.2s ease-in-out;
