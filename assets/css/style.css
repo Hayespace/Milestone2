@@ -229,11 +229,10 @@
     .white-keys {
         display: flex;
     }
-
-    ,
      
     #kit-btn {
         background-color: rgba(163, 50, 32);
+        border-radius: 0;
     }
 
     #edm-btn {
@@ -306,4 +305,17 @@
           width: 10vh;
           margin: 5px;
       }
+      
+      .piano-case {
+        transform: rotate(-90deg);
+        size: inherit;
+        position: absolute;
+        padding: 10px 10px;
+        margin-right: 15vh;
+    }
+
+      .keys-h3 {
+        display: none;
+      }
+      
   }

@@ -12,7 +12,10 @@
             <div>
               <div>
                 <a><img src="./assets/images/dummachine.png" height="150" width="150" alt="Drum machine logo"></a>
-                <h2>DRUM <br/> MACHINE</h2>
+
+            
+                
+                <h2>RECORD <br/> BUTTON</h2>
               </div>
             </div>
         </div>
@@ -20,16 +23,14 @@
 
     <div class="container">
       <div class="panel" style="background-image: url(./assets/images/kit.jpg)">
+
         <div class="buttons vintage-kit">
-           <button id="kit-btn" data-key="#" class="btn"><h1>Kick</h1><p>Z</p></button>
-           <button id="kit-btn" data-key="#" class="btn"><h1>Snare</h1><p>X</p></button>
-           <button id="kit-btn" data-key="#" class="btn"><h1>Open HH</h1><p>C</p></button>
-           <button id="kit-btn" data-key="#" class="btn"><h1>Closed HH</h1><p>V</p></button>
-           <button id="kit-btn" data-key="#" class="btn"><h1>Tom</h1><p>B</p></button>
-           <button id="kit-btn" data-key="#" class="btn"><h1>Floor Tom</h1><p>N</p></button>
-           <button id="kit-btn" data-key="#" class="btn"><h1>Cowbell</h1><p>M</p></button>
-           <button id="kit-btn" data-key="#" class="btn"><h1>Rim Tap</h1><p><</p></button>
-           <button id="kit-btn" data-key="#" class="btn"><h1>Cymbal</h1><p>></p></button>
+
+          <audio id="audio" controls></audio>
+          <button class="btn" name="record">record</button>
+          <button class="btn" name="stop">stop</button>     
+              
+          
         </div>
            <h3>Info</h3>
         </div>
@@ -106,13 +107,10 @@
                     </div>  
                   </div>
             </div>
-                <h3>KEYS</h3>
+                <h3 class="keys-h3">KEYS</h3>
         </div>
     </div>
 
-      
-
-      <audio data-key="90" src="assets/sounds/library-1/Shaker.wav"></audio>
 
       <script src="script.js"></script>
 </body>
