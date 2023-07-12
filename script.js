@@ -97,4 +97,25 @@ btnStart.addEventListener('click', async () => {
       mediaRecorder.ondataavailable = (e)=>{
            chunks.push(e.data);
       }
+       //function to catch error
+       mediaRecorder.onerror = (e)=>{
+            alert(e.error);
+       }
+
+    //function to catch error
+    mediaRecorder.onerror = (e)=>{
+      alert(e.error);
+ }
+
+ mediaRecorder.onstop = (e)=>{
+      let blod = new Blob(chunks);
+      //create url for audio
+      let url = URL.createObjectURL(blod);
+      //pass url into audio tag
+      audio.src = url;
+ }
+ btnStop.addEventListener('click',()=>{
+      mediaRecorder.stop();
+ })
+});
 
