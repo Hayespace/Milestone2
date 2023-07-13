@@ -239,6 +239,34 @@
         background-color: rgb(40, 40, 51);
     }
 
+    .dm-pic {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+
+    .rec-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10%;
+    }
+
+    .rec-btn button {
+        background-color: rgb(61, 40, 82);
+        border-radius: 50px;
+        height: 5vh;
+        width: 10vh;
+        border: none;
+        box-shadow: 15px 10px 5px rgba(6, 3, 23, 0.675);
+        color: rgb(250, 200, 106);
+        cursor: grab;
+        margin: 1rem;
+        font-family: 'Kanit', sans-serif;
+        font-size: 20px;
+
   @media(max-width: 1930px)  {
       .buttons {
           max-height: 100%;

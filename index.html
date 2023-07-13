@@ -9,16 +9,26 @@
 <body>
     <div class="logo">
         <div>
-            <div>
-              <div>
-                <a><img src="./assets/images/dummachine.png" height="150" width="150" alt="Drum machine logo"></a>
-
             
+              <div>
+                <a class="dm-pic"><img src="./assets/images/dummachine.png" height="150" width="150" alt="Drum machine logo"></a>
                 
-                <h2>RECORD <br/> BUTTON</h2>
+                
+                <div class="rec-btn">
+                  <button name="record">Record</button>
+                  <button name="stop">Stop</button> 
+                </div>
+
+                <div class="player">
+                <audio id="audio" controls download></audio>
+                </div>
+                 
+                
+                <h2>AUDIO RECORDER</h2>
               </div>
-            </div>
+
         </div>
+        
     </div>
 
     <div class="container">
@@ -26,11 +36,6 @@
 
         <div class="buttons vintage-kit">
 
-          <audio id="audio" controls></audio>
-          <button class="btn" name="record">record</button>
-          <button class="btn" name="stop">stop</button>     
-              
-          
         </div>
            <h3>Info</h3>
         </div>
