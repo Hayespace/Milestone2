@@ -235,14 +235,12 @@
         display: flex;
     }
      
-    #kit-btn {
+    #kit-2 {
         background-color: rgba(163, 50, 32);
-        border-radius: 0;
+        border-radius: 20px;
+        color: antiquewhite;
     }
 
-    #edm-btn {
-        background-color: rgb(40, 40, 51);
-    }
 
     .rec-btn {
         display: flex;
