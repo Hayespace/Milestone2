@@ -73,8 +73,9 @@ article {
     display: block;
     color: whitesmoke;
     font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 15px 10px 5px rgba(6, 3, 23, 0.675);
     font-size: medium;
-    border: 2px solid;
+    border: none;
     background-color: rgba(176, 39, 114, 0.8);
     margin: auto;
     margin-top: 20%;
@@ -254,7 +255,7 @@ article {
     }
      
     #kit-2 {
-        background-color: rgba(163, 50, 32);
+        background-color: rgb(132, 128, 88);
         border-radius: 20px;
         color: antiquewhite;
     }
@@ -293,7 +294,7 @@ article {
         margin: auto;
     }
 
-    .record:active {
+    .on-record {
         opacity: 0.90;
         border: solid rgb(250, 200, 106);
         box-shadow: 10px 10px 10px yellow;
