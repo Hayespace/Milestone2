@@ -64,6 +64,24 @@
     cursor: grab;
   }
 
+article {
+    display: none;
+}
+
+  
+  .panel.active article {
+    display: block;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    border: 2px solid;
+    background-color: rgba(176, 39, 114, 0.8);
+    margin: auto;
+    margin-top: 20%;
+    width: 70%;
+    padding: 10px;
+  }
+
   .panel button {
       opacity: 0;
   }
