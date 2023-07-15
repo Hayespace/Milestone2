@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 80%;
     overflow: hidden;
     margin: 0;
   }
@@ -58,6 +58,11 @@
       margin: 0;
       opacity: 0;
   } 
+
+  a {
+    color: rgb(217, 166, 72);
+    cursor: grab;
+  }
 
   .panel button {
       opacity: 0;
@@ -239,6 +244,61 @@
         background-color: rgb(40, 40, 51);
     }
 
+    .rec-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin-top: 30%;
+        margin-bottom: 10%;
+    }
+
+    .stop {
+        background-color: rgb(250, 200, 106);
+        border-radius: 50px;
+        border: none;
+        box-shadow: 15px 10px 5px rgba(6, 3, 23, 0.675);
+        cursor: pointer;
+        margin: auto;
+        
+    }
+
+    .active .stop:hover {
+        opacity: 0.80;
+        transition: 0.2s ease-in-out;
+    }
+
+    .record {
+        background-color: red;
+        border-radius: 50px;
+        border: none;
+        box-shadow: 15px 10px 5px rgba(6, 3, 23, 0.675);
+        cursor: pointer;
+        margin: auto;
+    }
+
+    .record:active {
+        opacity: 0.90;
+        border: solid rgb(250, 200, 106);
+        box-shadow: 10px 10px 10px yellow;
+    }
+
+    .active .record:hover {
+        opacity: 0.80;
+        transition: 0.2s ease-in-out;
+    }
+
+    .player {
+        display: none;
+        
+    }
+
+    .active .player {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
   @media(max-width: 1930px)  {
       .buttons {
           max-height: 100%;
@@ -269,6 +329,7 @@
       justify-content: center;
       height: auto;
   }
+
 }
   
   @media(max-width: 1288px) {
@@ -297,6 +358,10 @@
       .logo {
           display: none;
       }
+
+      .panel-none {
+        display: none;
+    }
   }
   
   @media(max-width: 569px) {

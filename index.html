@@ -1,121 +1,299 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css"/>
-    <title>DRUM MACHINE</title>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="./assets/css/style.css" rel="stylesheet">
+
+  <title>DRUM MACHINE</title>
 </head>
+
 <body>
-    <div class="logo">
+
+  <!--  Logo and Name  -->
+
+  <div class="logo">
+    <div>
+      <div>
         <div>
-            <div>
-              <div>
-                <a><img src="./assets/images/dummachine.png" height="150" width="150" alt="Drum machine logo"></a>
+          <a><img alt="Drum machine logo" height="150" src="./assets/images/dummachine.png" width="150"></a>
 
-               
-                
-                <h2>RECORD <br/> BUTTON</h2>
-              </div>
-            </div>
+          <h2>MUSIC<br>
+          MACHINE</h2>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  Panels  -->
+
+  <div class="container">
+
+    <!--  Info Panel  -->
+    <div class="panel panel-none" style="background-image: url(./assets/images/maschine.jpg)">
+      <div>
+        About Me
+      </div>
+
+
+      <h3>About</h3>
     </div>
 
-    <div class="container">
-      <div class="panel" style="background-image: url(./assets/images/kit.jpg)">
+    <!--  Recorder Panel  -->
+    <div class="panel panel-none" style="background-image: url(./assets/images/kit.jpg)">
+      <div>
+        Recorder
+      </div>
 
-        <div class="buttons vintage-kit">
 
-          <div class="rec-btn">
-            <button name="record">Record</button>
-            <button name="stop">Stop</button> 
-          </div>
-
-          <div class="player">
-          <audio id="audio" controls download></audio>
-          </div>
-
-        </div>
-           <h3>Info</h3>
+      <div class="recorder">
+        <div class="rec-btn">
+          <button class="record" name="record">REC</button> <button class="stop" name="stop">STOP</button>
         </div>
 
-            <div class="panel active" style="background-image: url(./assets/images/808.jpg)">
-              <div class="buttons 808">
-                <button data-key="49" class="btn"><h1>Kick</h1><p>1</p></button>
-                <button data-key="50" class="btn"><h1>Snare</h1><p>2</p></button>
-                <button data-key="51" class="btn"><h1>Hi-Hat</h1><p>3</p></button>
-                <button data-key="52" class="btn"><h1>Cymbal</h1><p>4</p></button>
-                <button data-key="53" class="btn"><h1>Crash</h1><p>5</p></button>
-                <button data-key="54" class="btn"><h1>Clap</h1><p>6</p></button>
-                <button data-key="55" class="btn"><h1>Conga</h1><p>7</p></button>
-                <button data-key="56" class="btn"><h1>Blip</h1><p>8</p></button>
-                <button data-key="57" class="btn"><h1>Shaker</h1><p>9</p></button>
-              </div>
-                <audio data-key="49" src="assets/sounds/library-1/Kick.wav"></audio>
-                <audio data-key="50" src="assets/sounds/library-1/snare.wav"></audio>
-                <audio data-key="51" src="assets/sounds/library-1/ClosedHH.wav"></audio>
-                <audio data-key="52" src="assets/sounds/library-1/HH.wav"></audio>
-                <audio data-key="53" src="assets/sounds/library-1/Crash.wav"></audio>
-                <audio data-key="54" src="assets/sounds/library-1/clap.wav"></audio>
-                <audio data-key="55" src="assets/sounds/library-1/Conga.wav"></audio>
-                <audio data-key="56" src="assets/sounds/library-1/Cowbell.wav"></audio>
-                <audio data-key="57" src="assets/sounds/library-1/Shaker.wav"></audio>
-                <h3>808</h3>
+
+        <div class="player">
+          <audio controls="" id="audio"></audio>
         </div>
+      </div>
 
-        <div class="panel" style="background-image: url(./assets/images/maschine.jpg)">
 
-            <div class="piano">
-                  <div class="piano-case">
-                    <div class="keys">
-                      <div class="black-keys">
-                          <div data-key="87" class="key black-key"><p>W</p></div>
-                          <div data-key="69" class="key black-key"><p>E</p></div>
-                          <div data-key="84" class="key black-key"><p>T</p></div>
-                          <div data-key="89" class="key black-key"><p>Y</p></div>
-                          <div data-key="85" class="key black-key"><p>U</p></div>
-                          <div data-key="79" class="key black-key"><p>O</p></div>
-                          <div data-key="80" class="key black-key"><p>P</p></div>
-                      </div>
-                          
-                      <div class="white-keys">
-                          <div data-key="65" class="key white-key"><p>A</p></div>
-                          <div data-key="83" class="key white-key"><p>S</p></div>
-                          <div data-key="68" class="key white-key"><p>D</p></div>
-                          <div data-key="70" class="key white-key"><p>F</p></div>
-                          <div data-key="71" class="key white-key"><p>G</p></div>
-                          <div data-key="72" class="key white-key"><p>H</p></div>
-                          <div data-key="74" class="key white-key"><p>J</p></div>
-                          <div data-key="75" class="key white-key"><p>K</p></div>
-                          <div data-key="76" class="key white-key"><p>L</p></div>
-                          <div data-key="186" class="key white-key"><p>;</p></div>
-                      </div>
-
-                          <audio data-key="65" src="assets/sounds/library-2/key01.mp3"></audio>
-                          <audio data-key="87" src="assets/sounds/library-2/key02.mp3"></audio>
-                          <audio data-key="83" src="assets/sounds/library-2/key03.mp3"></audio>
-                          <audio data-key="69" src="assets/sounds/library-2/key04.mp3"></audio>
-                          <audio data-key="68" src="assets/sounds/library-2/key05.mp3"></audio>
-                          <audio data-key="70" src="assets/sounds/library-2/key06.mp3"></audio>
-                          <audio data-key="84" src="assets/sounds/library-2/key07.mp3"></audio>
-                          <audio data-key="71" src="assets/sounds/library-2/key08.mp3"></audio>
-                          <audio data-key="89" src="assets/sounds/library-2/key09.mp3"></audio>
-                          <audio data-key="72" src="assets/sounds/library-2/key10.mp3"></audio>
-                          <audio data-key="85" src="assets/sounds/library-2/key11.mp3"></audio>
-                          <audio data-key="74" src="assets/sounds/library-2/key12.mp3"></audio>
-                          <audio data-key="75" src="assets/sounds/library-2/key13.mp3"></audio>
-                          <audio data-key="79" src="assets/sounds/library-2/key14.mp3"></audio>
-                          <audio data-key="76" src="assets/sounds/library-2/key15.mp3"></audio>
-                          <audio data-key="80" src="assets/sounds/library-2/key16.mp3"></audio>
-                          <audio data-key="186" src="assets/sounds/library-2/key17.mp3"></audio>
-                    </div>  
-                  </div>
-            </div>
-                <h3 class="keys-h3">KEYS</h3>
-        </div>
+      <h3>Download</h3>
     </div>
 
+    <!--  Kit 1 Panel  -->
+    <div class="panel active" style="background-image: url(./assets/images/808.jpg)">
+      <div>
+        Kit 1
+      </div>
 
-      <script src="script.js"></script>
+
+      <div class="buttons 808">
+        <button class="btn" data-key="49">
+        <h1>Kick</h1>
+
+
+        <p>1</p></button> <button class="btn" data-key="50">
+        <h1>Snare</h1>
+
+
+        <p>2</p></button> <button class="btn" data-key="51">
+        <h1>Hi-Hat</h1>
+
+
+        <p>3</p></button> <button class="btn" data-key="52">
+        <h1>Cymbal</h1>
+
+
+        <p>4</p></button> <button class="btn" data-key="53">
+        <h1>Crash</h1>
+
+
+        <p>5</p></button> <button class="btn" data-key="54">
+        <h1>Clap</h1>
+
+
+        <p>6</p></button> <button class="btn" data-key="55">
+        <h1>Conga</h1>
+
+
+        <p>7</p></button> <button class="btn" data-key="56">
+        <h1>Blip</h1>
+
+
+        <p>8</p></button> <button class="btn" data-key="57">
+        <h1>Shaker</h1>
+
+
+        <p>9</p></button>
+      </div>
+      <audio data-key="49" src="assets/sounds/library-1/Kick.wav"></audio> <audio data-key="50" src=
+      "assets/sounds/library-1/snare.wav"></audio> <audio data-key="51" src="assets/sounds/library-1/ClosedHH.wav"></audio>
+      <audio data-key="52" src="assets/sounds/library-1/HH.wav"></audio> <audio data-key="53" src=
+      "assets/sounds/library-1/Crash.wav"></audio> <audio data-key="54" src="assets/sounds/library-1/clap.wav"></audio> <audio data-key=
+      "55" src="assets/sounds/library-1/Conga.wav"></audio> <audio data-key="56" src="assets/sounds/library-1/Cowbell.wav"></audio>
+      <audio data-key="57" src="assets/sounds/library-1/Shaker.wav"></audio>
+
+      <h3><a href="assets/sounds/library-1/clap.wav">Download</a>
+      </h3>
+    </div>
+
+    <!--  Kit 2 Panel  -->
+    <div class="panel" style="background-image: url(./assets/images/mpc.png)">
+      <div>
+        Kit 2
+      </div>
+
+
+      <div class="buttons 808">
+        <button class="btn" data-key="49">
+        <h1>Kick</h1>
+
+
+        <p>1</p></button> <button class="btn" data-key="50">
+        <h1>Snare</h1>
+
+
+        <p>2</p></button> <button class="btn" data-key="51">
+        <h1>Hi-Hat</h1>
+
+
+        <p>3</p></button> <button class="btn" data-key="52">
+        <h1>Cymbal</h1>
+
+
+        <p>4</p></button> <button class="btn" data-key="53">
+        <h1>Crash</h1>
+
+
+        <p>5</p></button> <button class="btn" data-key="54">
+        <h1>Clap</h1>
+
+
+        <p>6</p></button> <button class="btn" data-key="55">
+        <h1>Conga</h1>
+
+
+        <p>7</p></button> <button class="btn" data-key="56">
+        <h1>Blip</h1>
+
+
+        <p>8</p></button> <button class="btn" data-key="57">
+        <h1>Shaker</h1>
+
+
+        <p>9</p></button>
+      </div>
+      <audio data-key="49" src="assets/sounds/library-1/Kick.wav"></audio> <audio data-key="50" src=
+      "assets/sounds/library-1/snare.wav"></audio> <audio data-key="51" src="assets/sounds/library-1/ClosedHH.wav"></audio>
+      <audio data-key="52" src="assets/sounds/library-1/HH.wav"></audio> <audio data-key="53" src=
+      "assets/sounds/library-1/Crash.wav"></audio> <audio data-key="54" src="assets/sounds/library-1/clap.wav"></audio> <audio data-key=
+      "55" src="assets/sounds/library-1/Conga.wav"></audio> <audio data-key="56" src="assets/sounds/library-1/Cowbell.wav"></audio>
+      <audio data-key="57" src="assets/sounds/library-1/Shaker.wav"></audio>
+
+      <h3><a href="assets/sounds/library-1/clap.wav">Download</a>
+      </h3>
+    </div>
+
+    <!--  Piano Panel  -->
+    <div class="panel" style="background-image: url(./assets/images/piano.png)">
+      <div>
+        Piano
+      </div>
+
+
+      <div class="piano">
+        <div class="piano-case">
+          <div class="keys">
+            <div class="black-keys">
+              <div class="key black-key" data-key="87">
+                <p>W</p>
+              </div>
+
+
+              <div class="key black-key" data-key="69">
+                <p>E</p>
+              </div>
+
+
+              <div class="key black-key" data-key="84">
+                <p>T</p>
+              </div>
+
+
+              <div class="key black-key" data-key="89">
+                <p>Y</p>
+              </div>
+
+
+              <div class="key black-key" data-key="85">
+                <p>U</p>
+              </div>
+
+
+              <div class="key black-key" data-key="79">
+                <p>O</p>
+              </div>
+
+
+              <div class="key black-key" data-key="80">
+                <p>P</p>
+              </div>
+            </div>
+
+
+            <div class="white-keys">
+              <div class="key white-key" data-key="65">
+                <p>A</p>
+              </div>
+
+
+              <div class="key white-key" data-key="83">
+                <p>S</p>
+              </div>
+
+
+              <div class="key white-key" data-key="68">
+                <p>D</p>
+              </div>
+
+
+              <div class="key white-key" data-key="70">
+                <p>F</p>
+              </div>
+
+
+              <div class="key white-key" data-key="71">
+                <p>G</p>
+              </div>
+
+
+              <div class="key white-key" data-key="72">
+                <p>H</p>
+              </div>
+
+
+              <div class="key white-key" data-key="74">
+                <p>J</p>
+              </div>
+
+
+              <div class="key white-key" data-key="75">
+                <p>K</p>
+              </div>
+
+
+              <div class="key white-key" data-key="76">
+                <p>L</p>
+              </div>
+
+
+              <div class="key white-key" data-key="186">
+                <p>;</p>
+              </div>
+            </div>
+            <audio data-key="65" src="assets/sounds/library-2/key01.mp3"></audio> <audio data-key="87" src=
+            "assets/sounds/library-2/key02.mp3"></audio> <audio data-key="83" src="assets/sounds/library-2/key03.mp3"></audio>
+            <audio data-key="69" src="assets/sounds/library-2/key04.mp3"></audio> <audio data-key="68" src=
+            "assets/sounds/library-2/key05.mp3"></audio> <audio data-key="70" src="assets/sounds/library-2/key06.mp3"></audio>
+            <audio data-key="84" src="assets/sounds/library-2/key07.mp3"></audio> <audio data-key="71" src=
+            "assets/sounds/library-2/key08.mp3"></audio> <audio data-key="89" src="assets/sounds/library-2/key09.mp3"></audio>
+            <audio data-key="72" src="assets/sounds/library-2/key10.mp3"></audio> <audio data-key="85" src=
+            "assets/sounds/library-2/key11.mp3"></audio> <audio data-key="74" src="assets/sounds/library-2/key12.mp3"></audio>
+            <audio data-key="75" src="assets/sounds/library-2/key13.mp3"></audio> <audio data-key="79" src=
+            "assets/sounds/library-2/key14.mp3"></audio> <audio data-key="76" src="assets/sounds/library-2/key15.mp3"></audio>
+            <audio data-key="80" src="assets/sounds/library-2/key16.mp3"></audio> <audio data-key="186" src=
+            "assets/sounds/library-2/key17.mp3"></audio>
+          </div>
+        </div>
+      </div>
+
+
+      <h3 class="keys-h3">Download</h3>
+    </div>
+  </div>
+  <script src="script.js">
+  </script>
 </body>
 </html>
