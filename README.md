@@ -2,9 +2,13 @@
 
 ![responsiveness](assets/images/responsive.png)
 
-Ga / LAB. is a showcase of the works of artist and graphic designer, Gaia Dipilato. 
+MUSIC MACHINE is a collection of downloadable instrument samples with a completely interactive and and playable interface using your phone or computer keyboard.
 
-The target audience is art collectors, galleries, and people with disposibale income who enjoy fashion, art and design.     
+Users can enjoy the freedom to join in jam sessions when real drums or piano are not available.
+
+The target audience is amatuer and yound musicians and those who wanty access to drums or keybaords on the go.  
+
+
 
 The site can be found here https://hayespace.github.io/Milestone2/
 
