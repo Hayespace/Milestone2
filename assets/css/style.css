@@ -213,9 +213,9 @@ article {
         font-family: Arial, Helvetica, sans-serif;
         color: #fc8989;
         font-size: 15px;
-        position: absolute;
-        bottom: 10px;
-        right: 10px;
+        position: relative;
+        bottom: 0;
+        left: 30px;
         margin: 0;
     }
 
@@ -248,6 +248,7 @@ article {
     }
 
     .black-keys {
+        z-index: 400;
         position: relative;
         display: flex;
     }

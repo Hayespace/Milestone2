@@ -21,7 +21,7 @@ The site can be found here https://hayespace.github.io/Milestone2/
 The user should: 
 - Be able to navigate through the whole site smoothly.
 - Understand the purpose of the site upon loading it.
-- Be able to contact the artist for more information.
+- 
 - View a gallery of works by the artist.
 - Have information about the artist
 - Link to social media
