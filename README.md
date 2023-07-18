@@ -2,37 +2,36 @@
 
 ![responsiveness](assets/images/responsive.png)
 
-MUSIC MACHINE is a collection of downloadable instrument samples with a completely interactive and and playable interface using your phone or computer keyboard.
+MUSIC MACHINE is a collection of downloadable instrument samples with a completely interactive and and playable interface using your phone, tablet or computer keyboard.
 
 Users can enjoy the freedom to join in jam sessions when real drums or piano are not available.
 
-The target audience is amatuer and yound musicians and those who wanty access to drums or keybaords on the go.  
-
+The target audience is amatuers, young musicians and those who want access to drums or keybaords on the go.  
 
 
 The site can be found here https://hayespace.github.io/Milestone2/
 
 ## UX
 
-
-
 ### User Stories
 
 The user should: 
-- Be able to navigate through the whole site smoothly.
-- Understand the purpose of the site upon loading it.
-- 
-- View a gallery of works by the artist.
-- Have information about the artist
-- Link to social media
+- Be able to navigate through the whole site smoothly with the five collapsible panels.
+- Understand the purpose of the site upon loading.
+- Play each individual sound using either a mouse, touch pad or computer keyboard.
+- Access two drum libraries, a piano keybard and audio recorder from the device microphone.
+- Hear the sounds clearly and without lag
+- The keys and button animations should respond to each click or key stroke.
+- Plug the output into an external speaker for live performance.
 
 ### Design and Colour Scheme
-- It has been designed with sleek minimalism and muted tones in mind, in order not to distract from the artworks and information.  
-- With such vibrant and colourful works inspiration has been drawn from the vast white walls of gallery spaces.
-- Soft lines and elegant fonts
--The overall design is intuitive and easy to navigate.
-- 9 unique pieces have been showcased highlighting the diversity of the artists work while not overwhelming the site user with imagery.
-- Each piece has been attached to a modal for fullscreen high res viewing.
+- The site has been designed with one easy to navigate page.  
+- 5 collapsible panels each conataining a high quality background image related to the content within that panel.
+- Soft rounded edges on all buttons, panels and keys
+- Dark color scheme on the main background with a mild transition from balck to purple enabling the lighter images to pop off the screen.
+- Floating button/ pads with a soft background shadow which changes colour when active.
+- Each drum pad is labelled with the name of the sound and corresponding key letter
+- Animated font which changes shape upon activation
 
 
 ## Features

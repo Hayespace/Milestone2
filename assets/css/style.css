@@ -74,14 +74,14 @@ article {
   .panel.active article {
     display: block;
     color: whitesmoke;
-    font-family: Arial, Helvetica, sans-serif;
-    box-shadow: 15px 10px 5px rgba(6, 3, 23, 0.675);
+    font-family: 'Roboto Mono', monospace;
+    box-shadow: 15px 10px 5px rgba(6, 3, 23, 0.65);
     font-size: medium;
     border: none;
-    background-color: rgba(176, 39, 114, 0.8);
+    background-color: rgba(176, 39, 114, 0.7);
     margin: auto;
     margin-top: 5%;
-    width: 70%;
+    width: 90%;
     padding: 10px;
   }
 
@@ -385,6 +385,7 @@ article {
   
   @media(max-width: 569px) {
       .panel.active button {
+          font-size: x-small;
           height: 10vh;
           width: 10vh;
           margin: 5px;
@@ -398,7 +399,7 @@ article {
         margin-right: 15vh;
     }
 
-      .keys-h3 {
+      h3 {
         display: none;
       }
       
