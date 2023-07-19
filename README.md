@@ -1,6 +1,6 @@
 # MUSIC MACHINE
 
-![responsiveness](assets/images/responsive.png)
+![responsiveness](assets/images/README_images/responsive.png)
 
 MUSIC MACHINE is a collection of downloadable instrument samples with a completely interactive and and playable interface using your phone, tablet or computer keyboard.
 
@@ -19,8 +19,9 @@ The user should:
 - Be able to navigate through the whole site smoothly with the five collapsible panels.
 - Understand the purpose of the site upon loading.
 - Play each individual sound using either a mouse, touch pad or computer keyboard.
-- Access two drum libraries, a piano keybard and audio recorder from the device microphone.
-- Hear the sounds clearly and without lag
+- Access two drum libraries, a piano keybard and audio recorder.
+- Hear the sounds clearly and without 
+- Record and playback live audio from the devices microphone.
 - The keys and button animations should respond to each click or key stroke.
 - Plug the output into an external speaker for live performance.
 
@@ -28,7 +29,7 @@ The user should:
 - The site has been designed with one easy to navigate page.  
 - 5 collapsible panels each conataining a high quality background image related to the content within that panel.
 - Soft rounded edges on all buttons, panels and keys
-- Dark color scheme on the main background with a mild transition from balck to purple enabling the lighter images to pop off the screen.
+- Dark color scheme on the main background with a mild transition from black to purple enabling the lighter images to pop off the screen.
 - Floating button/ pads with a soft background shadow which changes colour when active.
 - Each drum pad is labelled with the name of the sound and corresponding key letter
 - Animated font which changes shape upon activation
@@ -36,54 +37,60 @@ The user should:
 
 ## Features
 
-### Nav Bar
-- The navbar features links to all three pages with the site name in the top left allows the user to link back to the home page.
-- When viewed on a mobile device the links convert to a navbar toggler with dropdown button on the right.  Once pressed the menu drops down on the left below the site title. 
-- The current page is signalled by a change in text color to black and a period at the end of the word which is in keeping with the branding and style.
-- Simple black and muted grey tones have been selected for styling
+### The 5 Panels
+- Info panel which explains the purpose and site usecase.
+- A simple audio recorder with a two buttons, REC and STOP, and an embedded player.
+- A fully interactive drum sample library with 9 animated buttons which play a sample when clicked or played on the keyboard.
+- A second drum sample library with 6 animated buttons and sounds
+- A fully playable piano keyboard which can be played with mouse, touchpad or keybaord.
 
-![Nabar](/assets/images/readme_images/navbar.png)
-![Navbar mobile view](/assets/images/readme_images/navbar_mobile.png)
-![Navbar Toggle](/assets/images/readme_images/navbar_toggle.png)
+![Five Panels](/assets/images/README_images/5panels.png)
+
 
 ### Logo
-- Logo designed and supplied by the artist
-- It sits front and center at the top of each page aross all devices as a styling choice
-![Logo](/assets/images/readme_images/logo.png)
-### Carousel
-- The carousel is autoplay
-- Three banner images of collages provided by the artist sit within the carousel
-- The images offer examples of the differing styles of the artists work.
-![Carousel](/assets/images/readme_images/carousel.png)
-### Bio
-- Simple and responsive design on the landing page with and elegant font offering brief bio provided by the artist.
-### Gallery Page
-- A nine piece selection of works which showcase the different styles and mediums used by the artist. Opaque overlays have been added with the name of each piece appearing when hovered over.
-- The collection has been kept minimal so as not to overhwhelm the user with content but enough to show variety and scope.
-- Modal for full screen view of images.
-![Gallery Imgaes](/assets/images/readme_images/gallery.png)
-### Modal 
-![Modal](/assets/images/readme_images/modal_ss.png)
-### Contact from
-- Simple and elegant floating contact form with light box shadow.  
-- The labels sit inside the input boxes but transform to glide upwards and sit just above the box once clicked.
-![Contact Form](/assets/images/readme_images/contactform.png)
-### Bottom Logo
--  A simple design idea created by the artist to add a touch of colour to the pages
-### Footer
-- In keeping with the minimal nature of the site, only a single link to instagram has been included with muted copyright information just below.
-![Footer](/assets/images/readme_images/footer.png)
+- Simple png of a vintage drum machine 
+![Logo](/assets/images/README_images/logoss.png)
+### About
+- The about page is a simple 4 paragraph text box on a floating semi-opaque background
+![About](/assets/images/README_images/aboutpage.png)
+### Audio Recorder
+- Record audio from the devices micrphone directly to the site and playback with the integrated player
+![Recorder](/assets/images/README_images/recordpage.png)
+### Kit 1
+- 9 animated drum pads activated by click, touch or keybard depending on the device
+![Kit 1](/assets/images/README_images/kit1page.png)
+![Kit 1 Animated pad](/assets/images/README_images/padanimated.png)
+
+### Kit 2 
+- 6 animated drum pads activated by click, touch or keybard depending on the device
+![Kit 2](/assets/images/README_images/kit2page.png)
+### Piano
+- Fully playable piano with animated keys activated by click, touch or keybard depending on the device
+![Piano](/assets/images/README_images/pianopage.png)
+![Piano Animated Key](/assets/images/README_images/pianoanimatedkey.png)
+
+
 # Wirefame
 The layout of the final site does not differ too much from the planned wireframes.  
-I had an initial design meeting with the artist and the structure was mutally agreed upon as was the colour scheme and font choice.
+
+The intention was always a single page with collapsible panels each containing a different instrument
 
 
 ## index.html
-![Wireframes](/assets/images/readme_images/wf_index.png)
-## works.html
-![Wireframes](/assets/images/readme_images/wf_gallery.png)
-## contact.html
-![Wireframes](/assets/images/readme_images/wf_contact1.png)
+![index Wireframes](/assets/images/README_images/wf_index.png)
+
+## Drums
+![Drum Wireframes](/assets/images/README_images/wf_drums.png)
+
+## Piano
+![Piano Wireframes](/assets/images/README_images/wf_piano.png)
+
+## Phone Index
+![Phone Index Wireframes](/assets/images/README_images/wf_phone_index.png)
+
+## Phone Piano
+![Phone Piano Wireframes](/assets/images/README_images/wf_phone_piano.png)
+
 
 # Technologies Used
 - HTML5 - provides the content and structure for the website.
