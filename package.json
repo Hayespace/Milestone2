@@ -1,7 +1,7 @@
 {
   "name": "milestone2",
   "version": "1.0.0",
-  "description": "![responsiveness](assets/images/README_images/responsive.png)",
+  "description": "Remove 'active' class from panels",
   "main": "script.js",
   "scripts": {
     "test": "jest"
