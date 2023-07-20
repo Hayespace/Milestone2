@@ -1,0 +1,14 @@
+{
+  "name": "milestone2",
+  "version": "1.0.0",
+  "description": "![responsiveness](assets/images/README_images/responsive.png)",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
