@@ -1,12 +1,23 @@
-const { removeActiveClasses } = require('./script');
+const { removeActiveClasses } = require('./script'); 
 
-describe("removeActiveClasses", () => {
-    test("should remove 'active' class from all panels", () => {
-       
-        removeActiveClasses();
+describe('removeActiveClasses', () => {
+ 
+  document.body.innerHTML = `
+    <div class="panel active"></div>
+    <div class="panel"></div>
+    <div class="panel active"></div>
+    <div class="panel"></div>
+  `;
 
-        global.panels.forEach(panel => {
-            expect(panel.classList.remove).toHaveBeenCalledWith('active');
-        });
+  test('should remove "active" class from all panels', () => {
+   
+    removeActiveClasses();
+
+  
+    const panels = document.querySelectorAll('.panel');
+
+    panels.forEach(panel => {
+      expect(panel.classList.contains('active')).toBe(false);
     });
+  });
 });
