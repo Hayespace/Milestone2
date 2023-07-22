@@ -187,32 +187,38 @@ http://jigsaw.w3.org/css-validator/validator$link
 
 Several layers of manual testing were required thoughout the build which included but not strictly limited to;
 
-- Responsiveness - As I intended for the site to be functional across multiple devices it was important to play the instruments from my phone and tablet and laptop with a smaller screen to ensure that the sounds were audible when played on a touch screen, playable and that the aesthetics of design weren't too diminished on smaller devices.
-- Audio - Several sample libraries were tested before being commited to the final project.  This included playing them from though exisitng music software like Logic Pro, Native Instruments and Itunes
-- 
+
+### Responsiveness 
+As I intended for the site to be functional across multiple devices it was important to play the instruments from my phone and tablet and laptop with a smaller screen to ensure that the sounds were audible when played on a touch screen, playable and that the aesthetics of design weren't too diminished on smaller devices.
+### Audio 
+Several sample libraries were tested before being commited to the final project.  This included playing them from though exisitng music software like Logic Pro, Native Instruments and Itunes
+### Microphone 
+Manual testing to ensure that the microphone was accessible on different devices in order to capture audio with the recorder and that the audio could be played back.
+### Keyboard 
+As the instruments have been designed to be played with the computer keyboard it was necessary to test responsiveness of sounds based on which key was pressed and that there is little to no latency between striking the key and the intended sound.
 
 ## Issues Encountered and Resolved
-- ### Gallery - The overlay div was covering the entire screen and causing the screen and individual images to flicker.
-    - Fix - I changed the overlay to to 'display : none;' and hover to 'display : inline-block;'
+### Responsiveness  
+Responsiveness was one of the major issues throughout the entire build.  The nature of the panel styling meant that any small changes to the content and styling within a single panel had a knock-on effect across the entire site.
 
-- ### Contact - Message box was single line and text not wrapping within the box.
-    - Fix - I used a bootstrap input template and adjusted the styling to match the other input fields on the page.
-
-![Contact](/assets/images/readme_images/messagebx_notwrap.png)
-
-- ### Contact - Message box line spacing issue.
-    - Fix - I created a custom css class to adjust
-![Contact](/assets/images/readme_images/messagebx_linespc.png)
-
-- ### Gallery - Images provided by the artist were all different sizes
-    - Fix - I manually adjusted the size each image in photoshop to match
+#### Fixes
+        
+- 5 media queries with size specific CSS detail for each panel based on the screen size
+- Removing two panels by invoking display: none; in order to keep the screen neat and uncluttered.  I opted to remove the recorder for smaller devices such as phones as they have excellent out of the box audio recorders.  And the about page which i felt unecessary at that size.
+- The additon of a scroll function for small sceens in order not to lose access to some of the drum pads on phone
+- Flipping the Piano 90 degrees when on tablet or phone
+![keyboard 90 Degrees](/assets/images/README_images/keys90deg.png)
+- Removal of logo at smaller sizes to make room for the essesntial elements on the page
+- Ongoing adjustments to padding, margins, flex box and other positions and styles
 
 
+### Piano
 
-- ### Carousel - Images of varyting sizes reacting differently when on different devices
-    - Fix - Create custom banners of the same size with a central image which is shown on mobile and the side images visable on larger screens.
+While the main design for the keyboard was taken from a youtube tutorial the placement and adaption to the site was not without issues. 
 
-  ![Index](/assets/images/readme_images/testcarousel.png)
+- 
+
+
 
 
 
