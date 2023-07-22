@@ -20,7 +20,7 @@ The user should:
 - Understand the purpose of the site upon loading.
 - Play each individual sound using either a mouse, touch pad or computer keyboard.
 - Access two drum libraries, a piano keybard and audio recorder.
-- Hear the sounds clearly and without 
+- Hear the sounds clearly and without any latency
 - Record and playback live audio from the devices microphone.
 - The keys and button animations should respond to each click or key stroke.
 - Plug the output into an external speaker for live performance.
@@ -108,12 +108,18 @@ The intention was always a single page with collapsible panels each containing a
 - Understand the purpose of the site upon loading.
     - From the drum machine logo with large label to the 5 panel images of drum machines, Piano, and tape recorder the user can quicly and easily inderstand that this is a site about music and making music.  The design of the piano keyboard is self explainatory, as are the drum pads with large labels and letters indicating which keys to press to engage with the content.
 - Play each individual sound using either a mouse, touch pad or computer keyboard.
-    - 
+    - The pads and piano keys are both interactive and responsive.  They animate when clicked or pressed and the corresponding sound is triggered and played through the computer speakers.
 - Access two drum libraries, a piano keybard and audio recorder.
-- Hear the sounds clearly and without 
+    - Kit 1, Kit 2 and Piano are each contained within their own interactive panel.  Once the panel is open then the keys and buttons become fully functional and play the sounds contained within that specific library.
+- Hear the sounds clearly and without latency
+    - The samples are crisp a professional and recorded from actual instruments.  As they are high quality WAV files the audio is responsive and play swith near zero latency.
 - Record and playback live audio from the devices microphone.
+    - The Audio recoring panel will record sounds from either a built in or external micrphone source depending on the users setup.  Upon first interaction with the site the user will be asked to allow permission to connect to their device via their browser.
 - The keys and button animations should respond to each click or key stroke.
+  - Each key and button has been styled with colours and fonts to suit the sound library they represent.  The colours and shadows are bright and engaging.
 - Plug the output into an external speaker for live performance.
+  -  Users can use either the output of their device or bluetooth to connect to external speakers or recording device for live performance or recording.
+  
 ## Validator Testing
 
 - HTML - 1 error found on works.html (Refer to Unfixed Bugs)
