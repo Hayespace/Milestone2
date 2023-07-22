@@ -124,6 +124,7 @@ The intention was always a single page with collapsible panels each containing a
 
 - HTML - 1 error found on works.html (Refer to Unfixed Bugs)
 - CSS - No errors were found when passing through the official (Jigsaw) validator
+http://jigsaw.w3.org/css-validator/validator$link
 
 
 - JavaScript - 1 Error.  The arrow function does not need to be wrapped in parens so I have ignored the error here.

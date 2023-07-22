@@ -255,7 +255,19 @@ article {
         display: flex;
     }
      
-    #kit-2 {
+    #kit2-1,
+    #kit2-2,
+    #kit2-3,
+    #kit2-4,
+    #kit2-5,
+    #kit2-6  {
+
+        border: none;
+        box-shadow: 15px 10px 5px rgba(6, 3, 23, 0.675);
+        cursor: grab;
+        margin: 1rem;
+        padding: 0;
+        font-family: 'Kanit', sans-serif;
         background-color: rgb(132, 128, 88);
         border-radius: 20px;
         color: antiquewhite;
@@ -326,7 +338,6 @@ article {
         width: auto;
         height: auto;
         margin-right: auto;
-        align-items: flex;
         justify-content: center;
         height: auto;
     }
@@ -342,7 +353,6 @@ article {
       width: auto;
       height: auto;
       margin-right: auto;
-      align-items: flex;
       justify-content: center;
       height: auto;
   }
@@ -391,7 +401,6 @@ article {
       
       .piano-case {
         transform: rotate(-90deg);
-        size: inherit;
         position: absolute;
         padding: 10px 10px;
         margin-right: 15vh;
