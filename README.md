@@ -173,19 +173,26 @@ http://jigsaw.w3.org/css-validator/validator$link
 
 
 ## Unfixed Bugs
-- Contact Page - The message box had to be customised in order to create a larger input field and text wrap.  After using a bootstrap template and custom stying the box, I was unable to recreate the same placeholder text transition as the other input fields.  
-Due to the expandable nature of the bootstrap template, I was not able to find a work around that would allow for a variable transition based on the size of the expansion.
-- works.html - html validator returning issue with modal width value.
-![Modal](/assets/images/readme_images/modalwidtherror.png)
-By altering the value as suggested in the error, the image no longer filled the full width and height of the modal.  Leaving the error as is doesn't appear to impact performance of functionality in any way I made a decision to leave as is.
+- HTML Validator errors  - 
+    - Element h1 not allowed as child of element button in this context. (Suppressing further errors from this subtree.) (15)
+    - Element p not allowed as child of element button in this context. (Suppressing further errors from this subtree.) (15)
+
+Only after getting to the end of my project and using the HTML validator did I realise that this might be a symantix issue.  A possible fix might be to change the buttons to divs with similar styling or write some JS code to place the h1 and p inside the button apon activating the panel.  But due to time constraints and the fact that within the context of this project it appears to function without any issues I have opted to leave as is.  Certainly not something I will do again in the future, however.
+
+![HTMLValidator](/assets/images/README_images/validatorhtml.png)
+
+- Drum Kit buttons - After clicking a button and leaving the mouse hovering, then pressing the corresponding keyboard letter, a blue outline appears around the button.
+        - I've looked over the CSS many times and can't find the source of the bug
+
+![Button Outline](/assets/images/README_images/buttonoutline-blue.png)
+
+
+
 
 
 # Deployment
-The site was deployed to GitHub pages. The steps to deploy are as follows:
-- In the GitHub repository, navigate to the Settings tab
-- From the source section drop-down menu, select the Master Branch
-- Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
-- The live link can be found here - https://code-institute-org.github.io/love-running-2.0/index.html
+The site was deployed to GitHub pages. 
+- The live link can be found here - https://hayespace.github.io/Milestone2/
 
 
 # Credits
