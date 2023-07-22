@@ -96,8 +96,14 @@ The intention was always a single page with collapsible panels each containing a
 - HTML5 - provides the content and structure for the website.
 - CSS - provides the styling.
 - Balsamiq - used to create the wireframes.
+- JavaScript - For functionality including sounds and animation
+- MediaStream JavaScript API for Audio Recorder https://developer.mozilla.org/en-US/docs/Web/API/MediaStream
+- Native Instruments - For sample libraries
 - Gitpod - used to deploy the website.
 - Github - used to host and edit the website.
+- JSLinter - Checking JS Code
+- Nu Validator - Check HTML and CSS
+- HTML Cleaner - Beautifying HTML, CSS and JS
 
 # Testing
 
@@ -122,7 +128,7 @@ The intention was always a single page with collapsible panels each containing a
 
 ## Validator Testing
 
-- HTML - 1 error found on works.html (Refer to Unfixed Bugs)
+- HTML - Errors found on index.html (Refer to Unfixed Bugs)
 - CSS - No errors were found when passing through the official (Jigsaw) validator
 http://jigsaw.w3.org/css-validator/validator$link
 
@@ -183,17 +189,36 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 
 
 # Credits
-All images and artworks were designed and provided by the artist.  Bootstrap was used for some design elements including modal and grid system as well as a youtube tutorial for the sign up form.
+All images contained within the panels were sourced from third party image sites, Drum machines and Piano inspiration taken from several youtube and Medium.com sources and then adapted to be fit for purpose.
 
 ## Content
-- Contact Form - The contact form of my site was heavily influenced by the following tutorial https://www.youtube.com/watch?v=s6rF1Josk9M However, I customised some of the styling. In particular, the message box which only allowed for a single line of text and did not text-wrap so this was replaced with my own code.
-- Navbar - Navbar is a Bootstrap template with custom css
-- Icons - Instagram icon taken from font awesome
-- Logo and Artworks - These are original pieces design and provided by the artist, Gaia Dipilato
-- Carousel - Bootstrap template with custom media query
-- Gallery - Boostrap grid template with custom borders, overlay, shadows and labels
-- Modal - Bootstrap modal template added to gallery with some custom sizing and css 
+- Panels - Inspiration for the collapsible panels was taken directly from 50 JS Projects in 50 Days 'Expanding Cards' lesson.
+The core HTMl, CSS and JS are almost identical with the exception of some minor tweeks.  My own code is contained within the panels and the main challenges were adapting layout of the contents within the panels to be repsonsive and functional.
+
+Some examples include:
+
+- Adapting CSS and JS elements and functions to only work within an Active panel
+- Writing several media queries for maximum responsiveness on smaller devices
+- Several adjustments to CSS to ensure continuity across each panel even though the each contained different content
+
+    - https://archive.org/details/50-projects-in-50-days-html-css-java-script_202207/02+Day+1+-+Expanding+Cards/006+Initial+Cards.mp4
+
+- Drum Kits 1 & 2 - The code for the drums was inspired by several articles and a youtube video, of which, I adopted peices of code from each to modify into my own to service the project.  The main change was bringing keyboard and mouse played sounds together into the same project and piece of code.
+    - https://dev.to/coderamrin/how-to-build-a-drum-kit-with-javascript-572b 
+    - https://medium.com/@divyamcm/drum-kit-using-html-css-and-javascript-7e54a9f27544
+    - https://medium.com/@iminked/build-a-drum-machine-with-javascript-html-and-css-33a53eeb1f73
+    - https://www.youtube.com/watch?v=SBvn8FuylBg
+
+
+- Piano - The CSS design and layout of the keyboard was taken directly from the following youtube video as I really liked the design and it's simplicity.  I did however, discard the JavaScript and write my own by adapting the Drum kit code.
+    - https://www.youtube.com/watch?v=mjmh093Sucg
+
+- Recorder - Primary JS was taken from and trimmed down with custom CSS
+    - https://developer.mozilla.org/en-US/docs/Web/API/MediaStream_Recording_API/Using_the_MediaStream_Recording_API
+
 ## Media
 
-- Logo, Artworks and Photos - These are original pieces design and provided by the artist, Gaia Dipilato.
+- Logo and Photos are Adobe Express stock Images.
+- The logo is slightly modified with Adobe Express to create a tranparent background and colour change
+- Font from Google fonts
 
