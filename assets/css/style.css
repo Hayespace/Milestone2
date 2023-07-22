@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;800&family=Roboto+Mono:ital,wght@0,400;1,200;1,700&display=swap');
+
+/* Global */
+
 * {
     box-sizing: border-box;
   }
@@ -13,6 +16,8 @@
     overflow: hidden;
     margin: 0;
   }
+
+  /* Logo */
   
   .logo {
       margin: 10px 10px;
@@ -24,6 +29,8 @@
       text-align: center;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
+
+  /* Panels */
   
   .container {
       display: flex;
@@ -60,6 +67,10 @@
              1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
   } 
 
+  .panel button {
+    opacity: 0;
+}
+
   a {
     color: rgb(217, 166, 72);
     cursor: grab;
@@ -68,25 +79,6 @@
 article {
     display: none;
 }
-  
-  .panel.active article {
-    display: block;
-    color: whitesmoke;
-    font-family: 'Roboto Mono', monospace;
-    box-shadow: 15px 10px 5px rgba(6, 3, 23, 0.65);
-    font-size: medium;
-    border: none;
-    background-color: rgba(176, 39, 114, 0.7);
-    margin: auto;
-    margin-top: 5%;
-    width: 90%;
-    padding: 10px;
-    transition: opacity 0.7s ease-in;
-  }
-
-  .panel button {
-      opacity: 0;
-  }
   
   .panel.active {
       width: 80%;
@@ -106,6 +98,23 @@ article {
       font-size: 1.2rem;
       transition: opacity 1.5s ease-in;
   }
+
+  .panel.active article {
+    display: block;
+    color: whitesmoke;
+    font-family: 'Roboto Mono', monospace;
+    box-shadow: 15px 10px 5px rgba(6, 3, 23, 0.65);
+    font-size: medium;
+    border: none;
+    background-color: rgba(176, 39, 114, 0.7);
+    margin: auto;
+    margin-top: 5%;
+    width: 90%;
+    padding: 10px;
+    transition: opacity 0.7s ease-in;
+  }
+
+  /* Drums */
   
   .buttons {
       display: flex;
@@ -127,6 +136,24 @@ article {
         font-family: 'Kanit', sans-serif;
         font-size: xx-large;
     }
+
+    #kit2-1,
+    #kit2-2,
+    #kit2-3,
+    #kit2-4,
+    #kit2-5,
+    #kit2-6  {
+
+        border: none;
+        box-shadow: 15px 10px 5px rgba(6, 3, 23, 0.675);
+        cursor: grab;
+        margin: 1rem;
+        padding: 0;
+        font-family: 'Kanit', sans-serif;
+        background-color: rgb(132, 128, 88);
+        border-radius: 20px;
+        color: antiquewhite;
+    }
   
     .btn:active,
     .playing {
@@ -137,21 +164,14 @@ article {
       box-shadow: 15px 15px 5px rgba(208, 119, 68, 0.876);
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
-
-    .key:active,
-    .key-playing {
-      transform: scale(1.05);
-      border: solid;
-      border-color: rgb(225, 120, 195);
-      box-shadow: 5px 5px 2px rgba(225, 120, 195, 0.876);
-      
-    }
     
     .active .btn:hover {
         opacity: 0.95;
         transition: 0.2s ease-in-out;
         
     }
+
+    /* Piano */
 
     .panel.active .piano-case {
         height: 300px;
@@ -254,24 +274,17 @@ article {
     .white-keys {
         display: flex;
     }
-     
-    #kit2-1,
-    #kit2-2,
-    #kit2-3,
-    #kit2-4,
-    #kit2-5,
-    #kit2-6  {
 
-        border: none;
-        box-shadow: 15px 10px 5px rgba(6, 3, 23, 0.675);
-        cursor: grab;
-        margin: 1rem;
-        padding: 0;
-        font-family: 'Kanit', sans-serif;
-        background-color: rgb(132, 128, 88);
-        border-radius: 20px;
-        color: antiquewhite;
+    .key:active,
+    .key-playing {
+      transform: scale(1.05);
+      border: solid;
+      border-color: rgb(225, 120, 195);
+      box-shadow: 5px 5px 2px rgba(225, 120, 195, 0.876);
+      
     }
+    
+    /* recorder */
 
     .rec-btn {
         display: flex;
@@ -327,6 +340,8 @@ article {
         align-items: center;
         display: flex;
     }
+
+  /* responsive settings */  
 
   @media(max-width: 1930px)  {
       .buttons {
