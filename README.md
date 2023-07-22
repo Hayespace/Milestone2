@@ -119,11 +119,16 @@ The intention was always a single page with collapsible panels each containing a
   - Each key and button has been styled with colours and fonts to suit the sound library they represent.  The colours and shadows are bright and engaging.
 - Plug the output into an external speaker for live performance.
   -  Users can use either the output of their device or bluetooth to connect to external speakers or recording device for live performance or recording.
-  
+
 ## Validator Testing
 
 - HTML - 1 error found on works.html (Refer to Unfixed Bugs)
 - CSS - No errors were found when passing through the official (Jigsaw) validator
+
+
+- JavaScript - 1 Error.  The arrow function does not need to be wrapped in parens so I have ignored the error here.
+
+![JSLint](/assets/images/README_images/JSLint.png)
 
 ## Issues Encountered and Resolved
 - ### Gallery - The overlay div was covering the entire screen and causing the screen and individual images to flicker.

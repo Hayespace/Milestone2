@@ -1,6 +1,5 @@
 // Scrolling panels function
-
-const panels = document.querySelectorAll('.panel')
+const panels = document.querySelectorAll('.panel');
 
 panels.forEach(panel => {
       panel.addEventListener('click', () => {
@@ -16,8 +15,9 @@ function removeActiveClasses() {
 
 
 // Mouse click playing
-
 const btns = document.querySelectorAll('.btn');
+
+
 btns.forEach(btn => {
       btn.addEventListener('mousedown', event => {
             const keyCode = event.currentTarget.getAttribute('data-key');
@@ -29,9 +29,7 @@ btns.forEach(btn => {
       });     
 });
 
-
 // Key press audio and button animation
-
 window.addEventListener('keydown', event => playSound(event.keyCode));
 window.addEventListener('keyup', event => buttonAnimate(event.keyCode)); 
 
@@ -52,8 +50,8 @@ function buttonAnimate(keyCode){
 
 
 // Piano Mouse
-
 const keys = document.querySelectorAll('.key');
+
 keys.forEach(key => {
       key.addEventListener('mousedown', event => {
             const keyCode = event.currentTarget.getAttribute('data-key');
@@ -67,7 +65,6 @@ keys.forEach(key => {
 
 
 // Piano Keyboard
-
 window.addEventListener('keydown', event => playPiano(event.keyCode));
 window.addEventListener('keyup', event => keyAnimate(event.keyCode)); 
 
@@ -86,8 +83,8 @@ function keyAnimate(keyCode){
     keyUp.classList.remove('key-playing');
 };
 
-// Audio Recorder
 
+// Audio Recorder
 var btnStart = document.querySelector('button[name="record"]');
 var btnStop = document.querySelector('button[name="stop"]');
 var audio = document.querySelector('#audio');
@@ -124,6 +121,8 @@ recording.forEach(record => {
             buttonAnimate(keyCode);
       })
 });
+
+
 
 
 

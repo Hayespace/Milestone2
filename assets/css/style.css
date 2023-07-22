@@ -22,7 +22,6 @@
       color: rgb(217, 166, 72);
       margin: auto;
       text-align: center;
-      padding: auto;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
   
@@ -104,7 +103,6 @@ article {
       opacity: 1;
       height: 20vh;
       width: 20vh;
-      padding: auto;
       font-size: 1.2rem;
       transition: opacity 1.5s ease-in;
   }
