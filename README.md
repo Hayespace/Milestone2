@@ -103,18 +103,17 @@ The intention was always a single page with collapsible panels each containing a
 
 ## User Stories
 
-- Be able to navigate through the whole site smoothly.
-   - The layout and design is very simple and easy to navigate.  The navbar is clearly placed and defined.  In mobile it converts to a toggler which sits at the top of the screen for easy access.
-- Understand the purpose of the site upon loading it.
-    - The carousel clearly displays the works from the artist and presents them front and centre upon visiting the site.  Below is a brief blurb about the artist and her works.
-- Be able to contact the artist for more information.
-   - Very clear and easy to navigate contact form with a link in the navbar.
-- View a gallery of works by the artist.
-  - Responsive gallery page with interactive modal which presents the selected inmage in full screen.  A hover displays the name of the pieces.
-- Have information about the artist
-  - A brief two paragraph blurb sits in the landing page ditectly underneath the carousel of works.
-- Link to social media
-  -  Link to instagram in the footer.
+- Be able to navigate through the whole site smoothly with the five collapsible panels.
+    - The site is very easy to navigate and the images contained within the panels offer a visual clue as to what the user can expext from each one.  As theres is only one page the user is never far away from the main obkective and points of interaction.
+- Understand the purpose of the site upon loading.
+    - From the drum machine logo with large label to the 5 panel images of drum machines, Piano, and tape recorder the user can quicly and easily inderstand that this is a site about music and making music.  The design of the piano keyboard is self explainatory, as are the drum pads with large labels and letters indicating which keys to press to engage with the content.
+- Play each individual sound using either a mouse, touch pad or computer keyboard.
+    - 
+- Access two drum libraries, a piano keybard and audio recorder.
+- Hear the sounds clearly and without 
+- Record and playback live audio from the devices microphone.
+- The keys and button animations should respond to each click or key stroke.
+- Plug the output into an external speaker for live performance.
 ## Validator Testing
 
 - HTML - 1 error found on works.html (Refer to Unfixed Bugs)
