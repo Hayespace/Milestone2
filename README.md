@@ -137,6 +137,60 @@ http://jigsaw.w3.org/css-validator/validator$link
 
 ![JSLint](/assets/images/README_images/JSLint.png)
 
+## Automated Test
+
+   ### The Test
+   I chose to write an automated test for the expanding cards by installing Jest.  The expanding cards work by adding and removing the 'active' class from the divs containing the panels.  When a user clicks on a panel, the active class is added to the div thereby expanding the panel and revealing the contents within.
+
+   The test contained within panels.test.js checks the function removeActiveClasses with the following code.
+
+    
+1. Identifying the source 
+
+        /** * @jest-environment jsdom */
+
+        const { removeActiveClasses } = require('./script');
+
+2. Describing the test        
+
+        describe('removeActiveClasses', () => {
+        test('should remove "active" class from all panels', () => {
+
+3. Mocking the DOM
+            
+        document.body.innerHTML = `
+        <div class="panel active"></div>
+        <div class="panel"></div>
+        <div class="panel active"></div>
+        <div class="panel"></div>
+        `;
+
+3. Testing the Function        
+
+        removeActiveClasses();
+        const panels = document.querySelectorAll('.panel');
+
+        panels.forEach(panel => {
+        expect(panel.classList.contains('active')).toBe(false);
+        };
+   ### The Result
+
+   ### FAIL!
+
+   After several tutoring sessions, attempts to get an answer on Slack and going over the course material multiple times I was unable to get and answer as to why my test was returning reults for 'addEventListener', an entirely separate function, and not 'removeActiveClasses' as specified in the test.  
+
+   While unable to get a satisfactory answer for the fail, I am satisfied that the test code is correct and that the issue may be with either the installation of Jest or an issue with distinguishing between multiple event listeners.
+
+
+   ![Jest Test Result](/assets/images/README_images/jesttest.png)
+## Manual Testing 
+
+Several layers of manual testing were required thoughout the build which included but not strictly limited to;
+
+- Responsiveness - As I intended for the site to be functional across multiple devices it was important to play the instruments from my phone and tablet and laptop with a smaller screen to ensure that the sounds were audible when played on a touch screen, playable and that the aesthetics of design weren't too diminished on smaller devices.
+- Audio - Several sample libraries were tested before being commited to the final project.  This included playing them from though exisitng music software like Logic Pro, Native Instruments and Itunes
+- 
+
 ## Issues Encountered and Resolved
 - ### Gallery - The overlay div was covering the entire screen and causing the screen and individual images to flicker.
     - Fix - I changed the overlay to to 'display : none;' and hover to 'display : inline-block;'

@@ -14,7 +14,7 @@
     justify-content: center;
     height: 80%;
     overflow: hidden;
-    margin: 0;
+    
   }
 
   /* Logo */
@@ -47,7 +47,7 @@
       background-repeat: no-repeat;
       height: 80vh;
       width: 10%;
-      padding: 5%;
+      padding: 10px;
       border-radius: 50px;
       color: white;
       cursor: pointer;
