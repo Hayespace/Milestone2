@@ -205,31 +205,75 @@ Responsiveness was one of the major issues throughout the entire build.  The nat
         
 - 5 media queries with size specific CSS detail for each panel based on the screen size
 - Removing two panels by invoking display: none; in order to keep the screen neat and uncluttered.  I opted to remove the recorder for smaller devices such as phones as they have excellent out of the box audio recorders.  And the about page which i felt unecessary at that size.
+- Removal of logo at smaller sizes to make room for the essesntial elements on the page
 - The additon of a scroll function for small sceens in order not to lose access to some of the drum pads on phone
+![Scroll](/assets/images/README_images/scroll.png)
 - Flipping the Piano 90 degrees when on tablet or phone
 ![keyboard 90 Degrees](/assets/images/README_images/keys90deg.png)
-- Removal of logo at smaller sizes to make room for the essesntial elements on the page
+
 - Ongoing adjustments to padding, margins, flex box and other positions and styles
+
+
+### Pads/ Drums
+None of the tutorials I came across had information for building a virtual instrument which could be both clicked and played with a keyboard.  And due to the layout and styling rules associated with the expanding cards placing several buttons within the panels was not straight forward.
+
+Some issues encountered were:
+    
+- Sounds still playable while the panels was closed
+- Difficulty containing flexbox within the panel when reducing screen size
+- Animations staying on after the key or mouse was clicked
+![pads on](/assets/images/README_images/padslit.png)
+
+#### Fixes
+- To prevent sounds from being playable while panel was closed it was necessary to add the active class to the Javascript so that only sounds within the class of active could be played.
+![active class](/assets/images/README_images/activeclass.png)
+- Multiple media queries and scroll function added to help contain the button within smaller screens
+- Custom JS written for animations and integration of keyboard playable sounds
+
+Example:
+
+        // Key press audio and button animation
+
+        window.addEventListener('keydown', event => playSound(event.keyCode));
+        window.addEventListener('keyup', event => buttonAnimate(event.keyCode)); 
+
+        function playSound(keyCode){
+            const audio = document.querySelector(`audio[data-key="${keyCode}"]`);
+            const btndown = document.querySelector(`.active .btn[data-key="${keyCode}"]`);
+
+            btndown.classList.add('playing');
+            audio.currentTime = 0;
+            audio.play();  
+        };
 
 
 ### Piano
 
-While the main design for the keyboard was taken from a youtube tutorial the placement and adaption to the site was not without issues. 
+While the main design for the keyboard was taken from a youtube tutorial the placement and adaption to the site was not without issues. The JavaScript from the tutorial did not integrate proper with my existing code so animations and keyboard controlled sounds did not function as is.  And CSS required major modifications in order to fit within the panels.  
+Animations not turning off was also an issue here.
 
-- 
-
-
-
+![keyboard on](/assets/images/README_images/keybaordlit.png)
 
 
-- ### Contact - Animated label transitionY
-    - I followed a youtube tutorial which contained an animated label which sat within the input filed and glided up when text was entered into the text box.  The issue arose when clicking into the next field and the label would then glide down back into the box and obsure the newly entered text.
-    - Fix - I could not find a way to get the label text to stay in place. So I removed the label completely and replaced with placeholder text.
 
-### Original
-![Contact](/assets/images/readme_images/contactform.png)
+#### Fixes
+- Function written to remove CCS animation class with KeyUp
 
-### Fix
+        function keyAnimate(keyCode){
+            const keyUp = document.querySelector(`.key[data-key="${keyCode}"]`);
+
+            keyUp.classList.remove('key-playing');
+        };
+
+
+- JavaScript was rewritten to enable keyabord triggered sounds as well as mouse clicks.
+- JavaScript was rewritten to enable animations with new CSS class written for unique animation style.
+- Letters added to the piano keys to correspond to the computer keybaord letters.  
+    - As seen in the 90 degree piano image above, there was an initial issue with the letters bunching to the right on the white keys. This turned out to be an issue with not setting the parent to relative while child was set to absolute
+- To fit smaller screen 'transform: rotate(-90deg);' was added to the media queries for smaller screens.
+
+
+
 
 
 ## Unfixed Bugs
@@ -245,6 +289,19 @@ Only after getting to the end of my project and using the HTML validator did I r
         - I've looked over the CSS many times and can't find the source of the bug
 
 ![Button Outline](/assets/images/README_images/buttonoutline-blue.png)
+
+### Recorder
+
+The intitial concept behind introduction the recorder panel was to enable the user to record a performance on one of the instruments.
+Unfortunately I found very little information on how to adapt the MediaStream API to record sounds from the device.
+While i was able to successfully implement the ability to record from the users microphone and store the recording in the 'blob' for playback, none of the information I came across satisfactorily explained how to capture a wav or mp3 sound placed within an <audio> element.
+
+This is my main regret with the project as I believe it to be the thing that could tie it all together.  
+
+I'm confident that it is indeed possible but as the MediaStream API is a technology not included in the CI course material it was difficult to get advice on how to adapt it.
+ 
+
+
 
 
 
