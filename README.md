@@ -27,7 +27,7 @@ The user should:
 
 ### Design and Colour Scheme
 - The site has been designed with one easy to navigate page.  
-- 5 collapsible panels each conataining a high quality background image related to the content within that panel.
+- 5 collapsible panels each containing a high quality background image related to the content within that panel.
 - Soft rounded edges on all buttons, panels and keys
 - Dark color scheme on the main background with a mild transition from black to purple enabling the lighter images to pop off the screen.
 - Floating button/ pads with a soft background shadow which changes colour when active.
@@ -345,4 +345,5 @@ Some examples include:
 - Logo and Photos are Adobe Express stock Images.
 - The logo is slightly modified with Adobe Express to create a tranparent background and colour change
 - Font from Google fonts
+- Audio samples from Native Instruments drum sample library
 
