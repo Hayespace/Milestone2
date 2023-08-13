@@ -263,15 +263,21 @@ Steps:
 - In the browser's address bar, I entered the URL of the web application and pressed Enter.
 - I waited for the application to load.
 
+![Chrome](/assets/images/README_images/navbarchrome.png)
+
 2. Navigated to Kit 1 Panel:
 
 - Observing the various panels displayed, I clicked on the "Kit 1" panel to access the drum kit.
+
+![Kit1](/assets/images/README_images/kit1open.png)
 
 3. Played Drum Sounds:
 
 - On the Kit 1 Panel, there were buttons labeled with drum names (Kick, Snare, Hi-Hat, etc.).
 - Using my mouse or touch input, I clicked on the buttons corresponding to the drum sounds I wanted to play.
 - I listened closely to ensure that each button I clicked produced the correct drum sound.
+
+![Kit1](/assets/images/README_images/kickplaying.png)
 
 4. Checked Sound Variation:
 
@@ -284,6 +290,8 @@ Steps:
 - To create a drum beat, I clicked on multiple buttons in succession to simulate a rhythmic pattern.
 - I made sure the drum sounds were played in sync and that the rhythm was accurately produced.
 - I experimented with different combinations of drum sounds to explore the kit's versatility.
+
+![Kit1](/assets/images/README_images/kit2page.png)
 
 
 Throughout the testing, I took notes on my observations, paying attention to the responsiveness of the buttons, the quality of sound playback, and any unexpected behaviors. Manual testing allowed me to simulate real user interactions and identify usability issues that automated tests might not catch.
