@@ -136,6 +136,12 @@ Efficiency: How efficiently can users accomplish tasks once they are familiar wi
 
 - With a very user friendly design and easy to navigate panels, it does not take much time for the user to become familiar with it's functionality.
 
+### Examples of functionality in pictures
+![user stories 1](/assets/images/README_images/5panels.png)
+![user stories 2](/assets/images/README_images/kit2page.png)
+![user stories 3](/assets/images/README_images/pianopage.png)
+
+
 
 ## Validator Testing
 
