@@ -128,14 +128,17 @@ The intention was always a single page with collapsible panels each containing a
 
 ## Validator Testing
 
-- HTML - Errors found on index.html (Refer to Unfixed Bugs)
+- HTML - Errors found on index.html (Also refer to Unfixed Bugs)
+![HTML Lint](/assets/images/README_images/htmlerror1.png)
+![HTML Lint](/assets/images/README_images/htmlerror2.png)
+![HTML Lint](/assets/images/README_images/htmlerror3.png)
 - CSS - No errors were found when passing through the official (Jigsaw) validator
-http://jigsaw.w3.org/css-validator/validator$link
 
+![CSS Lint](/assets/images/README_images/ccslint.png)
 
 - JavaScript - 1 Error.  The arrow function does not need to be wrapped in parens so I have ignored the error here.
 
-![JSLint](/assets/images/README_images/JSLint.png)
+![JSLint](/assets/images/README_images/csslint.png)
 
 ## Automated Test
 
@@ -276,7 +279,8 @@ Animations not turning off was also an issue here.
 
 
 
-## Unfixed Bugs
+## Unfixed Bugs 
+
 - HTML Validator errors  - 
     - Element h1 not allowed as child of element button in this context. (Suppressing further errors from this subtree.) (15)
     - Element p not allowed as child of element button in this context. (Suppressing further errors from this subtree.) (15)
