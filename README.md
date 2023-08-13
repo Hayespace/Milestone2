@@ -126,6 +126,17 @@ The intention was always a single page with collapsible panels each containing a
 - Plug the output into an external speaker for live performance.
   -  Users can use either the output of their device or bluetooth to connect to external speakers or recording device for live performance or recording.
 
+### Objectives
+
+Learnability: How quickly can a new user understand how to use the application?
+
+- The interface is very intuitive and modelled off of existing instruments such as a piano or electric drum pad.  The buttons are responsive and interactive.
+
+Efficiency: How efficiently can users accomplish tasks once they are familiar with the application?
+
+- With a very user friendly design and easy to navigate panels, it does not take much time for the user to become familiar with it's functionality.
+
+
 ## Validator Testing
 
 - HTML - Errors found on index.html (Also refer to Unfixed Bugs)
@@ -139,6 +150,40 @@ The intention was always a single page with collapsible panels each containing a
 - JavaScript - 1 Error.  The arrow function does not need to be wrapped in parens so I have ignored the error here.
 
 ![JSLint](/assets/images/README_images/csslint.png)
+
+
+## Automated vs Manual Testing
+
+The following code is a Jest test suite for a function called removeActiveClasses. This function removes the "active" class from certain elements in the DOM. The principles of automated and manual testing and when each might be deployed in relation to this code are as follows:
+
+
+### Automated Testing: 
+Automated testing involves using scripts, frameworks, and tools to execute test cases automatically without human intervention. 
+
+### Advantages include:
+- Faster execution -  Automated tests can be run frequently and quickly, enabling faster feedback during development.
+- Consistency -  Tests are executed the same way each time, reducing the chance of human error.
+
+Deployment: 
+
+Automated testing is suited for routine and repetitive testing. In this code's case, the Jest test is an example of automated testing. It ensures that the removeActiveClasses function consistently removes the "active" class from panels in different scenarios.
+
+### Manual Testing: 
+Manual testing involves human testers manually executing test cases, observing results, and recording findings. In the context of the provided code:
+
+### Advantages include:
+- Human judgment -  Testers can apply intuitive judgment and creativity to explore various scenarios.
+- User experience evaluation -  Manual testing allows for assessing user interface elements and interactions.
+- Exploratory testing -  Testers can discover unexpected issues that might not be covered by automated tests.
+
+Deployment: 
+
+Manual testing is valuable when human evaluation and judgment are required. For instance, if the user experience of the application needs to be assessed or if new features are being introduced, manual testing can provide valuable insights. In this code's context, manual testing could be used to verify that the "active" class removal visually appears and behaves as expected in a real browser environment.
+
+
+In summary, for the provided code, automated testing using Jest is suitable for ensuring the consistent behavior of the removeActiveClasses function across different scenarios. Manual testing might be deployed to assess the visual and interactive aspects of the "active" class removal, especially if there are concerns about user experience or if the behavior isn't fully covered by automated tests.
+
+
 
 ## Automated Test
 
@@ -186,6 +231,7 @@ The intention was always a single page with collapsible panels each containing a
 
 
    ![Jest Test Result](/assets/images/README_images/jesttest.png)
+
 ## Manual Testing 
 
 Several layers of manual testing were required thoughout the build which included but not strictly limited to;
@@ -193,12 +239,55 @@ Several layers of manual testing were required thoughout the build which include
 
 ### Responsiveness 
 As I intended for the site to be functional across multiple devices it was important to play the instruments from my phone and tablet and laptop with a smaller screen to ensure that the sounds were audible when played on a touch screen, playable and that the aesthetics of design weren't too diminished on smaller devices.
+
 ### Audio 
 Several sample libraries were tested before being commited to the final project.  This included playing them from though exisitng music software like Logic Pro, Native Instruments and Itunes
 ### Microphone 
 Manual testing to ensure that the microphone was accessible on different devices in order to capture audio with the recorder and that the audio could be played back.
 ### Keyboard 
 As the instruments have been designed to be played with the computer keyboard it was necessary to test responsiveness of sounds based on which key was pressed and that there is little to no latency between striking the key and the intended sound.
+
+## Manual Testing Procedure: Usability Testing
+
+### Objective 
+To evaluate the usability of the web application by assessing its user interface, user interactions, and overall user experience.
+
+
+### Test Scenario - The user wanted to play a drum beat using Kit 1.
+
+Steps:
+
+1. Opened the Application:
+
+- I launched my preferred web browser.
+- In the browser's address bar, I entered the URL of the web application and pressed Enter.
+- I waited for the application to load.
+
+2. Navigated to Kit 1 Panel:
+
+- Observing the various panels displayed, I clicked on the "Kit 1" panel to access the drum kit.
+
+3. Played Drum Sounds:
+
+- On the Kit 1 Panel, there were buttons labeled with drum names (Kick, Snare, Hi-Hat, etc.).
+- Using my mouse or touch input, I clicked on the buttons corresponding to the drum sounds I wanted to play.
+- I listened closely to ensure that each button I clicked produced the correct drum sound.
+
+4. Checked Sound Variation:
+
+- I clicked on different buttons to play various drum sounds within Kit 1.
+- I paid attention to whether each sound sounded distinct from the others.
+- I verified that the sound files played seamlessly without any delays or interruptions.
+
+5. Tested Multiple Drum Sounds:
+
+- To create a drum beat, I clicked on multiple buttons in succession to simulate a rhythmic pattern.
+- I made sure the drum sounds were played in sync and that the rhythm was accurately produced.
+- I experimented with different combinations of drum sounds to explore the kit's versatility.
+
+
+Throughout the testing, I took notes on my observations, paying attention to the responsiveness of the buttons, the quality of sound playback, and any unexpected behaviors. Manual testing allowed me to simulate real user interactions and identify usability issues that automated tests might not catch.
+
 
 ## Issues Encountered and Resolved
 ### Responsiveness  
