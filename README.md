@@ -149,13 +149,14 @@ Efficiency: How efficiently can users accomplish tasks once they are familiar wi
 ![HTML Lint](/assets/images/README_images/htmlerror1.png)
 ![HTML Lint](/assets/images/README_images/htmlerror2.png)
 ![HTML Lint](/assets/images/README_images/htmlerror3.png)
-- CSS - No errors were found when passing through the official (Jigsaw) validator
 
-![CSS Lint](/assets/images/README_images/ccslint.png)
+- CSS - No errors were found when passing through the CSS validator.
+
+![CSS Lint](/assets/images/README_images/csslint.png)
 
 - JavaScript - 1 Error.  The arrow function does not need to be wrapped in parens so I have ignored the error here.
 
-![JSLint](/assets/images/README_images/csslint.png)
+![JSLint](/assets/images/README_images/jslint.png)
 
 
 ## Automated vs Manual Testing
