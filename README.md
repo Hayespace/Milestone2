@@ -409,15 +409,16 @@ This is my main regret with the project as I believe it to be the thing that cou
 I'm confident that it is indeed possible but as the MediaStream API is a technology not included in the CI course material it was difficult to get advice on how to adapt it.
  
 
-
-
-
-
-
-
 # Deployment
 The site was deployed to GitHub pages. 
 - The live link can be found here - https://hayespace.github.io/Milestone2/
+
+1. **Log in to GitHub and locate your repository.**
+2. **Click on the "Settings" button in the repository's menu.**
+3. **Scroll down to the "GitHub Pages" section.**
+4. **Under "Source," select the "main" branch from the dropdown.**
+5. **Wait for the page to refresh automatically.**
+6. **Scroll back down to the "GitHub Pages" section to find your published site link.**
 
 
 # Credits
